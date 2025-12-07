@@ -29,7 +29,6 @@ function App() {
     )
   }, [])
 
-  
   // type Language = "ENG" | "SPN";
   // const [language, setLanguage] = useState<Language>("SPN");
 
@@ -46,23 +45,29 @@ function App() {
 
   return (
     <div 
-    className="w-full h-full font-[nunito] flex justify-center flex-col
+    className="w-full h-full flex justify-center flex-col
     bg-LIGHT-background text-LIGHT-text
     dark:bg-DARK-background dark:text-DARK-text"
     >
       <div className="w-full h-full z-10">
         <Header></Header>
-        <div id="home"></div>
-        <Home></Home>
-        <div id="projects"></div>
-        <Projects></Projects>
-        <div id="about"></div>
-        <About></About>
-        <Contact></Contact>
+        
+        <div id="home">
+          <Home></Home>
+        </div>
+        
+        <div id="projects">
+          <Projects></Projects>
+        </div>
+        
+        <div id="about-me">
+          <About></About>
+        </div>
+        
+        <div>
+          <Contact></Contact>
+        </div>
       </div>
-
-      <RadialGradient size={"120rem"} top={"-950"} left={"-100"} gradient={"gradient-radial-1 fixed"}></RadialGradient>
-
 
       <div 
         className={`z-10 flex gap-3 flex-row fixed bottom-5 right-5 transition-opacity duration-300 hover:opacity-100 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}

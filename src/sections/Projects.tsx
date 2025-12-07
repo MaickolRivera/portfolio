@@ -16,7 +16,7 @@ export default function Projects(){
         <section className="px-5 w-full relative flex items-center mt-35 flex-col gap-5 pb-70">
             <div className="flex flex-row items-center gap-5 ">
                 <ProjectsCode color="gray"/>
-                <h2 className="font-[poppins] text-gradient text-3xl text-center max-w-[28rem]">
+                <h2 className="text-gradient text-3xl text-center max-w-[28rem]">
                     PROYECTOS
                 </h2>
             </div>

@@ -4,10 +4,10 @@ import AboutGrid from "./sub_sections/AboutGrid";
 
 export default function About(){
     return(
-        <section  className="w-full px-5 relative flex items-center mt-35 flex-col gap-3 pb-90">
+        <section className="w-full px-5 relative flex items-center mt-35 flex-col gap-3 pb-90">
             <div className="flex flex-row items-center gap-5 ">
                 <AboutCode color="gray"/>
-                <h2 className="font-[poppins] text-gradient text-3xl text-center max-w-[28rem]">
+                <h2 className="text-gradient text-3xl text-center max-w-[28rem]">
                     SOBRE MI
                     </h2>
             </div>

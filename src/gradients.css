@@ -10,20 +10,6 @@
         border-image: var(--gradient-line) 1;
     }
 
-    .gradient-radial-1 {
-        background: var(--gradient-radial-1);
-        background-size: 120% 120%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .gradient-radial-2 {
-        background: var(--gradient-radial-2);
-        background-size: 120% 120%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     .gradient-radial-project {
         background: var(--gradient-radial-project);
         background-size: 120% 120%;

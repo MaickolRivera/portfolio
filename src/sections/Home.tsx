@@ -5,6 +5,7 @@ import StarBackground from "../components/StarBackground";
 
 export default function Home(){
 
+
     return(
         <section className="px-5 relative w-screen h-full flex items-center mt-50 flex-col gap-6 pb-100">
             <StarBackground widthBackground={60} heightBackground={50} starCount={40} topOffset={-80}/>
@@ -16,10 +17,10 @@ export default function Home(){
             </div>
 
             <div className="flex flex-col items-center">
-                <h1 className="font-[poppins] text-4xl text-gradient md:text-5xl/12 text-center">
+                <h1 className="text-4xl text-gradient md:text-5xl/12 text-center">
                     Maickol Rivera <br />
                 </h1>
-                <h2 className=" font-[poppins] typewriter text-gradient text-3xl md:text-4xl/12 text-center">
+                <h2 className="typewriter text-gradient text-3xl md:text-4xl/12 text-center">
                     Desarrollador Web
                 </h2>
 

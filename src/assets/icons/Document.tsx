@@ -1,5 +1,5 @@
 type DocumentProps ={
-    className: string
+    className?: string
 }
 
 export default function Document({className}:DocumentProps){

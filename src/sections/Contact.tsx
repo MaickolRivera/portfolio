@@ -15,7 +15,7 @@ export default function Contact(){
                 <Line classList="mb-0.5 rotate-180"></Line>
             </div>
 
-            <h2 className="max-w-[35rem] font-[poppins] md:w-[25rem] text-gradient text-4xl text-center">
+            <h2 className="max-w-[35rem] md:w-[25rem] text-gradient text-4xl text-center">
                 HABLAME DE TU PROXIMO PROYECTO
             </h2>
             <div className="flex gap-6 mt-1">

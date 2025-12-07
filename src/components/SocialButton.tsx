@@ -27,10 +27,17 @@ export default function SocialButton({
   return (
     <a
       href={href}
-      className={` ${className} items-center justify-between flex gap-3 flex-row text-sm py-2.5 px-4.5
-       text-LIGHT-text hover:text-LIGHT-subtext 
-       dark:text-DARK-subtext dark:hover:text-DARK-text 
-       border-1 border-LIGHT-subtext/20 dark:border-DARK-subtext/30 rounded-xl`}
+      className={` ${className} 
+      items-center justify-between flex gap-3 flex-row text-sm py-2 px-5
+      gradient-menu border-1 rounded-xl border-DARK-text/10 dark:border-DARK-border 
+      
+      text-LIGHT-text hover:text-LIGHT-subtext 
+      dark:text-DARK-unselected dark:hover:text-DARK-text 
+      
+      hover:text-LIGHT-subtext text-LIGHT-text 
+      dark:hover:text-DARK-subtext dark:text-DARK-unselected
+       `
+      }
       target={target}
       rel="noopener noreferrer"
       aria-label={label}
@@ -39,13 +46,13 @@ export default function SocialButton({
       
         {
           Options === "arrow" ? (
-            <Arrow className="dark:text-DARK-text text-LIGHT-text" />
+            <Arrow  />
           ) : Options === "github" ? (
-            <Github className="dark:text-DARK-text text-LIGHT-text" />
+            <Github  />
           ) : Options === "link" ? (
-            <Link className="dark:text-DARK-text text-LIGHT-text" />
+            <Link  />
           ) : Options === "document" ? (
-            <Document className="dark:text-DARK-text text-LIGHT-text"/>
+            <Document />
           ) : null
         }
 

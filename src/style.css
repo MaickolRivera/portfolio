@@ -2,7 +2,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-    font-family: 'Poppins', "Nunito", system-ui, sans-serif;
+    font-family: 'Onest', system-ui, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -10,8 +10,10 @@ html {
     --color-DARK-background: #111213;
     --color-DARK-button: #131315;
     --color-DARK-text: #fff;
-    --color-DARK-subtext: #AAAAAC;
+    --color-DARK-subtext: #DBDBE2;
     --color-DARK-selected: #16161B;
+    --color-DARK-unselected: #8C8C8E;
+    --color-DARK-border: #3D3D41;
 
     --color-LIGHT-background: #FEFCF3;
     --color-LIGHT-button: #e9e9e9;
@@ -40,7 +42,6 @@ html {
   from, to { border-color: transparent;}
   50% { border-color: gray;}
 }
-
 
 @keyframes flicker {
   0%, 100% {
@@ -105,25 +106,17 @@ html {
 
 
 @font-face {
-    font-family: 'Nunito';
-    src: url('./assets/fonts/Nunito-Regular.woff2') format('woff2');
+    font-family: 'Onest';
+    src: url('./assets/fonts/Onest-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   
   @font-face {
-    font-family: 'Nunito';
-    src: url('./assets/fonts/Nunito-SemiBold.woff2') format('woff2');
+    font-family: 'Onest';
+    src: url('./assets/fonts/Onest-SemiBold.woff2') format('woff2');
     font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2');
-    font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
