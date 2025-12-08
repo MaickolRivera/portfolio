@@ -13,6 +13,7 @@ type StarBackgroundProps = {
   topOffset?: number;
   widthBackground?: number;
   heightBackground?: number;
+  className?: string;
 };
 
 const StarBackground: React.FC<StarBackgroundProps> = ({
@@ -20,6 +21,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
   topOffset = 0,
   widthBackground = 300,
   heightBackground = 100,
+  className = ""
 }) => {
   const [stars, setStars] = useState<Star[]>([]);
 
@@ -43,7 +45,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
 
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 pointer-events-none z-0 overflow-hidden rounded-b-full"
+      className={`absolute left-1/2 -translate-x-1/2 pointer-events-none z-0 overflow-hidden rounded-b-full ${className}`}
       style={{
         top: `${topOffset}px`,
         width: `${widthBackground}%`,

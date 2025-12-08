@@ -21,7 +21,7 @@ export const experienceItems = [
     },
     {
         date: "MARZO 2025 – SEPTIEMBRE 2025",
-        title: "Promise Gestión y Soluciones S.A.S",
+        title: "PROMISE GESTION Y SOLUCIONES S.A.S",
         description: [
             "Formulé, estructuré y di seguimiento a proyectos de inversión con diversas fuentes de financiamiento.",
             "Contribui en la elaboracion de la estructura y componentes del proyecto, incluyendo objetivos, actividades, presupuesto, cronograma y recursos necesarios.",
