@@ -24,8 +24,8 @@ export default function Projects(){
                     </h2>
             </div>
 
-            <p className="max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
-                Desarrollando productos como landing pages, apps multiplataforma, experiencias 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
+            <p className="max-w-[20rem] md:max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
+                He desarrollando productos como landing pages, experiencias 3D interactivas, integraciones de encriptación, visualizacion de algoritmos y apps multiplataforma. 
             </p>
 
             <div className="

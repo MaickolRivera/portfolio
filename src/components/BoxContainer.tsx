@@ -7,7 +7,7 @@ type BoxContainerProps = {
 export function BoxContainer({ children, title, className }: BoxContainerProps) {
   return (
     <div className={`${className}
-      flex flex-col items-center gap-8 py-8
+      flex flex-col items-center gap-8 py-8 h-auto
       overflow-hidden border-1 rounded-xl
       
       border-LIGHT-subtext/20 bg-LIGHT-selected/20
@@ -22,7 +22,7 @@ export function BoxContainer({ children, title, className }: BoxContainerProps) 
 export function SmallBox({ children, title, className }: BoxContainerProps) {
   return (
     <div className={`${className}
-      flex flex-col justify-center items-center gap-0.5 py-6 h-full
+      flex flex-col justify-center items-center gap-0.5 py-6 h-auto md:h-full
       overflow-hidden border-1 rounded-xl font-semibold
       
       border-LIGHT-subtext/20 bg-LIGHT-selected/20
@@ -37,7 +37,7 @@ export function SmallBox({ children, title, className }: BoxContainerProps) {
 export function MainBox({ className }: BoxContainerProps) {
   return (
     <div className={`${className}
-      flex flex-row justify-center items-center gap-5 h-full py-8
+      flex flex-row justify-center items-center gap-5 h-40 md:h-full  py-8
       overflow-hidden border-1 rounded-xl
       
       border-LIGHT-subtext/20 bg-LIGHT-selected/20

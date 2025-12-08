@@ -13,7 +13,7 @@ export default function About(){
                 </h2>
             </div>
 
-             <p className="max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
+             <p className="max-w-[20rem] md:max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
                 Comencé mi trayectoria con el Desarrollo de Software a los
                 17 años, acumulando experiencia en diversos proyectos
             </p>

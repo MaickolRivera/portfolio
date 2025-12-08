@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div 
-    className="w-[100vw] h-full flex justify-center flex-col
+    className="w-[100vw] h-full flex justify-center flex-col overflow-hidden
     bg-LIGHT-background text-LIGHT-text
     dark:bg-DARK-background dark:text-DARK-text"
     >
