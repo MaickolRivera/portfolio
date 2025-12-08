@@ -13,29 +13,43 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section className="px-5 w-full relative flex items-center mt-35 flex-col gap-5 pb-70">
-            <div className="flex flex-row items-center gap-5 ">
-                <ProjectsCode color="gray"/>
-                <h2 className="text-gradient text-3xl text-center max-w-[28rem]">
-                    PROYECTOS
-                </h2>
+        <section className="
+        flex items-center gap-5 flex-col 
+        px-5 w-full relative my-80">
+
+            <div className="flex flex-col items-center gap-3">
+                    <ProjectsCode color="gray"/>
+                    <h2 className="text-2xl text-center text-gradient font-semibold">
+                        PROYECTOS
+                    </h2>
             </div>
+
             <p className="max-w-[28rem] text-sm text-gradient text-center opacity-80 md:text-base/5">
                 Desarrollando productos como landing pages, apps multiplataforma, experiencias 3D interactivas, integraciones de encriptación y visualizacion de algoritmos. 
             </p>
 
-            <div className="flex md:gap-5 md:flex-row justify-between w-full mt-10 max-w-[20rem] md:max-w-[41rem]">
+            <div className="
+                flex justify-between 
+                w-full mt-12 max-w-[20rem] 
+                md:max-w-[45rem] md:gap-5 md:flex-row">
+
                 <div className="flex flex-row items-center gap-5">
                     <SwitchOption
                         selectedValue={typeList}
                         setSelectedValue={setTypeList}
                         options={[
-                            <SliderListIcon className="text-LIGHT-text dark:text-DARK-text" size={15}/>,
-                            <ColumnsListIcon className="text-LIGHT-text dark:text-DARK-text" size={15}/>
+                            <SliderListIcon className="text-LIGHT-text dark:text-DARK-text" size={18}/>,
+                            <ColumnsListIcon className="text-LIGHT-text dark:text-DARK-text" size={18}/>
                         ]}
                         values={["SLIDER", "COLUMNS"]}
                     />
-                    <p className="text-sm font-semibold text-LIGHT-subtext dark:text-DARK-subtext hidden md:block">LISTA DE PROYECTOS</p>
+                    <p className="
+                        text-base font-semibold hidden  
+                        dark:text-DARK-subtext text-LIGHT-subtext
+                        md:block">
+                            LISTA DE PROYECTOS
+                    </p>
+
                 </div>
                 {/* <button className="text-xs cursor-pointer gradient-menu rounded-lg px-4 border-1
                 text-LIGHT-subtext hover:text-LIGHT-text border-LIGHT-text/10
@@ -45,7 +59,7 @@ export default function Projects(){
             </div>
 
             {typeList == "SLIDER" ? <SliderList/> : <ColumnList/>}
-            <StarBackground widthBackground={60} heightBackground={50} starCount={40} topOffset={150} />
+            <StarBackground widthBackground={70} heightBackground={80} starCount={80} topOffset={220} />
 
         </section>
     )

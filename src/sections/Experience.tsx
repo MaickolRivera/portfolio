@@ -4,11 +4,18 @@ import { experienceItems } from "./sub_sections/ExperienceItems";
 
 export default function Experience(){
     return(
-        <section className="relative flex flex-col justify-center items-center gap-5 mt-35">
-            <StarBackground widthBackground={50} heightBackground={50} starCount={80} topOffset={220} className="rotate-270 left-[80rem] rounded-b-none"/>
+        <section className="relative flex flex-col justify-center items-center gap-5 my-80">
+            <StarBackground 
+                widthBackground={50} 
+                heightBackground={50} 
+                starCount={80} 
+                topOffset={220} 
+                className="rotate-270 left-[80rem] rounded-b-none"
+            />
             
-            <div className="flex flex-col justify-center items-center gap-10">
-                <div className="flex flex-col items-center gap-2.5">
+            <div className="flex flex-col justify-center items-center gap-12">
+                
+                <div className="flex flex-col items-center gap-3">
                     <ExperienceIcon color="gray"></ExperienceIcon>
                     <h2 className="text-2xl text-center text-gradient font-semibold">
                         EXPERIENCIA
@@ -19,6 +26,7 @@ export default function Experience(){
                     {
                         experienceItems.map((item, index) => (
                             <li key={index} className="flex justify-center border-l-2 pl-6 border-DARK-unselected">
+                                
                                 <div className="flex flex-col w-[40.5rem]">
                                     <p className="text-xs dark:text-DARK-unselected">{item.date}</p>
                                     <p className="text-lg dark:text-DARK-text font-semibold mt-1">{item.title}</p>
@@ -29,6 +37,7 @@ export default function Experience(){
                                         ))}
                                     </div>
                                 </div>
+                            
                             </li>
                         ))
                     }
