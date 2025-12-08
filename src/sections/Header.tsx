@@ -50,9 +50,9 @@ export default function Header(){
         w-[100vw] flex justify-center items-center
         fixed top-0 left-0 z-50 py-3 px-1 gradient-line
         bg-LIGHT-background dark:bg-DARK-background
-        md:justify-around">
+        lg:justify-around">
 
-            <p className="text-sm font-semibold text-DARK-subtext hidden md:block md:w-40 text-center">
+            <p className="text-sm font-semibold text-DARK-subtext hidden lg:block md:w-40 text-center">
                 Maickol R.
             </p>
 
@@ -87,7 +87,7 @@ export default function Header(){
                         : 'opacity-0 translate-x-4 pointer-events-none'
                 }`}
             >
-                <div className="hidden md:flex md:flex-row md:gap-5 md:w-40">
+                <div className="hidden lg:flex md:flex-row md:gap-5 md:w-40">
                     <SocialButton 
                         Options="document" 
                         text={"Descargar CV"} 

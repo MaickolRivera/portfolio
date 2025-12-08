@@ -1,13 +1,20 @@
-import Home from "./sections/Home"
+import { useEffect, useState, lazy, Suspense } from "react";
 import Header from "./sections/Header";
 import Moon from "./assets/icons/switch_icons/Moon";
 import Sun from "./assets/icons/switch_icons/Sun";
 import SwitchOption from "./components/SwitchOption";
-import { useEffect, useState } from "react";
-import Projects from "./sections/Projects";
-import About from "./sections/About";
-import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
+
+const Home = lazy(() => import("./sections/Home"));
+const Experience = lazy(() => import("./sections/Experience"));
+const Projects = lazy(() => import("./sections/Projects"));
+const About = lazy(() => import("./sections/About"));
+const Contact = lazy(() => import("./sections/Contact"));
+
+const SectionLoader = () => (
+  <div className="w-full min-h-[200px] flex items-center justify-center">
+    <div className="animate-pulse text-gray-400">Loading...</div>
+  </div>
+);
 
 function App() {
 
@@ -20,7 +27,7 @@ function App() {
     localStorage.setItem("theme", newTheme);
   };
 
-  useEffect( ()=> {
+  useEffect(() => {
     const storageTheme = localStorage.getItem("theme") || "dark";
     setTheme(storageTheme as ThemeKey);
     document.documentElement.classList.toggle(
@@ -28,9 +35,6 @@ function App() {
       storageTheme === "dark"
     )
   }, [])
-
-  // type Language = "ENG" | "SPN";
-  // const [language, setLanguage] = useState<Language>("SPN");
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -45,34 +49,43 @@ function App() {
 
   return (
     <div 
-    className="w-[100vw] h-full flex justify-center flex-col overflow-hidden
-    bg-LIGHT-background text-LIGHT-text
-    dark:bg-DARK-background dark:text-DARK-text"
+      className="w-[100vw] h-full flex justify-center flex-col overflow-hidden
+      bg-LIGHT-background text-LIGHT-text
+      dark:bg-DARK-background dark:text-DARK-text"
     >
       <div className="w-full h-full z-10">
         <Header></Header>
         
         <main>
           <div id="home">
-            <Home></Home>
+            <Suspense fallback={<SectionLoader />}>
+              <Home />
+            </Suspense>
           </div>
           
           <div id="experience">
-            <Experience></Experience>
+            <Suspense fallback={<SectionLoader />}>
+              <Experience />
+            </Suspense>
           </div>
     
           <div id="projects">
-            <Projects></Projects>
+            <Suspense fallback={<SectionLoader />}>
+              <Projects />
+            </Suspense>
           </div>
           
           <div id="about-me">
-            <About></About>
+            <Suspense fallback={<SectionLoader />}>
+              <About />
+            </Suspense>
           </div>
           
           <div>
-            <Contact></Contact>
+            <Suspense fallback={<SectionLoader />}>
+              <Contact />
+            </Suspense>
           </div>
-      
         </main>
       </div>
 
@@ -88,20 +101,8 @@ function App() {
           ]}
           values={["light", "dark"]}
         />
-
-        {/* <SwitchOption
-          selectedValue={language}
-          setSelectedValue={setLanguage}
-          options={[
-            <p>ENG</p>,
-            <p>SPN</p>,
-          ]}
-          values={["ENG", "SPN"]}
-        /> */}
       </div>
-      
     </div>
-
   )
 }
 

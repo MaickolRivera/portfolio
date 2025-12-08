@@ -44,7 +44,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
     <div className="relative flex flex-col items-center">
       <div className="
       flex flex-col gap-5
-      relative max-w-[20rem] h-full overflow-hidden border-1 rounded-xl px-2 py-2
+      relative max-w-[19rem] h-full overflow-hidden border-1 rounded-xl px-2 py-2
       md:max-w-[45rem] md:h-[320px] md:px-6
 
       border-LIGHT-subtext/20 bg-LIGHT-selected/20

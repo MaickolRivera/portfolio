@@ -28,7 +28,7 @@ export default function Home(){
             <div className="flex flex-col items-center">
                 
                 <h1 className="
-                text-4xl tracking-wide font-semibold text-gradient text-center
+                text-3xl tracking-wide font-semibold text-gradient text-center
                 md:text-4xl">
                     MAICKOL RIVERA <br />
                 </h1>
@@ -62,7 +62,7 @@ export default function Home(){
             <a 
             href="#projects" 
             aria-label="projects section"
-            className="arrow absolute bottom-10"> 
+            className="arrow absolute bottom-25 md:bottom-12"> 
                 <Arrow 
                 size="23" 
                 className="opacity-50"/>
