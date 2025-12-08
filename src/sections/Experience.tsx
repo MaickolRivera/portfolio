@@ -1,4 +1,5 @@
 import ExperienceIcon from "../assets/icons/section_icons/ExperienceIcon";
+import RadialGradient from "../components/RadialGradient";
 import StarBackground from "../components/StarBackground";
 import { experienceItems } from "./sub_sections/ExperienceItems";
 
@@ -42,7 +43,15 @@ export default function Experience(){
                         ))
                     }
                 </ul>
+            </div>
 
+            <div className="
+                absolute pointer-events-none
+                right-0 top-[10%] md:top-[20%] md:right-[77%] ">
+                    <RadialGradient
+                        size="600"
+                        gradient="gradient-radial-project"
+                    />
             </div>
             
 

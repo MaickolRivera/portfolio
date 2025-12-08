@@ -141,10 +141,12 @@ export default function AboutGrid(){
                     />
                 </a>
 
-                <div className="opacity-50 right-0 top-[10%] md:top-[20%] md:right-[30%] absolute pointer-events-none">
+                <div className="
+                absolute pointer-events-none
+                right-0 top-[10%] md:top-[0%] md:right-[70%] ">
                     <RadialGradient
                         size="400"
-                        gradient="gradient-radial-project "
+                        gradient="gradient-radial-project"
                     />
                 </div>
             </div>

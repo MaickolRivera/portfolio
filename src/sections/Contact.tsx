@@ -22,7 +22,6 @@ export default function Contact(){
                 <SocialButton text={"GITHUB"} href="https://github.com/m4icol" target="_black" Options="github" label="Look at my GitHub profile"></SocialButton>
                 <SocialButton text={"LINKEDIN"} href="https://www.linkedin.com/in/maickol-rivera/" target="_black" Options="link" label="Look at my LinkedIn profile"></SocialButton>
             </div>
-
         </section>
     )
 }
