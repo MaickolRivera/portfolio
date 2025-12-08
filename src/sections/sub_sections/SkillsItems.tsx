@@ -6,8 +6,6 @@ import Css from "../../assets/icons/skills_icons/frontend/CssIcon";
 import ReactJS from "../../assets/icons/skills_icons/frontend/ReactJSIcon";
 import ThreeJS from "../../assets/icons/skills_icons/frontend/ThreeJSIcon";
 import Astro from "../../assets/icons/skills_icons/frontend/AstroIcon";
-import NodeJSIcon from "../../assets/icons/skills_icons/backend/NodeJSIcon";
-import NestIcon from "../../assets/icons/skills_icons/backend/NestIcon";
 import PythonIcon from "../../assets/icons/skills_icons/backend/PythonIcon";
 import FastAPIIcon from "../../assets/icons/skills_icons/backend/FastAPIIcon";
 import MongoDBIcon from "../../assets/icons/skills_icons/backend/MongoDBIcon";
@@ -16,6 +14,8 @@ import CloudinaryIcon from "../../assets/icons/skills_icons/other/CloudinaryIcon
 import GitIcon from "../../assets/icons/skills_icons/other/GitIcon";
 import BashIcon from "../../assets/icons/skills_icons/other/BashIcon";
 import AzureIcon from "../../assets/icons/skills_icons/other/AzureIcon";
+import SQLIcon from "../../assets/icons/skills_icons/backend/SQLIcon";
+import PostgresIcon from "../../assets/icons/skills_icons/backend/PostgresIcon";
 
 export const FRONTEND = [
     {
@@ -63,7 +63,7 @@ export const BACKEND = [
         text: "FASTAPI"
     },
     {
-        icon: <NodeJSIcon />,
+        icon: <SQLIcon />,
         text: "SQL"
     },
         {
@@ -71,7 +71,7 @@ export const BACKEND = [
         text: "MONGO"
     },
     {
-        icon: <NestIcon />,
+        icon: <PostgresIcon />,
         text: "POSTGRES"
     },
 
