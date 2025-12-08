@@ -47,9 +47,10 @@ export default function Header(){
 
     return(
         <header className="
-        w-full flex justify-around items-center
+        w-[100vw] flex justify-center items-center
         fixed top-0 left-0 z-50 py-3 px-1 gradient-line
-        bg-LIGHT-background dark:bg-DARK-background">
+        bg-LIGHT-background dark:bg-DARK-background
+        md:justify-around">
 
             <ul className="text-sm font-semibold text-DARK-subtext hidden md:block md:w-40 text-center">
                 Maickol R.
@@ -64,7 +65,7 @@ export default function Header(){
                         <li key={item.id}>
                             <button 
                                 onClick={() => scrollToSection(item.id)}
-                                className={`text-sm transition-colors duration-200
+                                className={`text-xs md:text-sm transition-colors duration-200
                                 ${activeSection === item.id 
                                     ? 'text-LIGHT-text dark:text-DARK-text' 
                                     : 'text-LIGHT-text/60 dark:text-DARK-unselected'
