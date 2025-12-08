@@ -29,7 +29,7 @@ export default function SocialButton({
       href={href}
       className={` ${className} 
       items-center justify-between flex gap-3 flex-row text-sm py-2 px-5
-      gradient-menu border-1 rounded-xl border-DARK-text/10 dark:border-DARK-border 
+      gradient-menu border-1 rounded-lg border-DARK-text/10 dark:border-DARK-border 
       
       text-LIGHT-text hover:text-LIGHT-subtext 
       dark:text-DARK-unselected dark:hover:text-DARK-text 
