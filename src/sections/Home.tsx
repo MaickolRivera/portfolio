@@ -72,12 +72,12 @@ export default function Home(){
             width="1642" height="353" viewBox="0 0 1642 353" fill="none" xmlns="http://www.w3.org/2000/svg" 
             className="absolute bottom-[-80px]">
                 <ellipse cx="821.5" cy="994.5" rx="996.5" ry="994.5" 
-                fill="url(#paint0_linear_553_670)" fill-opacity="0.1"/>
+                fill="url(#paint0_linear_553_670)" fillOpacity="0.1"/>
                 <defs>
                     <linearGradient id="paint0_linear_553_670" x1="821.5" y1="-29.9661" x2="821.5" y2="1989" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#010101"/>
-                        <stop offset="0.0001" stop-color="#DFDBFF"/>
-                        <stop offset="0.125" stop-color="#010101" stop-opacity="0"/>
+                        <stop stopColor="#010101"/>
+                        <stop offset="0.0001" stopColor="#DFDBFF"/>
+                        <stop offset="0.125" stopColor="#010101" stopOpacity="0"/>
                     </linearGradient>
                 </defs>
             </svg>

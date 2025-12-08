@@ -52,25 +52,28 @@ function App() {
       <div className="w-full h-full z-10">
         <Header></Header>
         
-        <div id="home">
-          <Home></Home>
-        </div>
-        
-        <div id="experience">
-          <Experience></Experience>
-        </div>
-
-        <div id="projects">
-          <Projects></Projects>
-        </div>
-        
-        <div id="about-me">
-          <About></About>
-        </div>
-        
-        <div>
-          <Contact></Contact>
-        </div>
+        <main>
+          <div id="home">
+            <Home></Home>
+          </div>
+          
+          <div id="experience">
+            <Experience></Experience>
+          </div>
+    
+          <div id="projects">
+            <Projects></Projects>
+          </div>
+          
+          <div id="about-me">
+            <About></About>
+          </div>
+          
+          <div>
+            <Contact></Contact>
+          </div>
+      
+        </main>
       </div>
 
       <div 

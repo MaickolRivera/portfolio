@@ -52,9 +52,9 @@ export default function Header(){
         bg-LIGHT-background dark:bg-DARK-background
         md:justify-around">
 
-            <ul className="text-sm font-semibold text-DARK-subtext hidden md:block md:w-40 text-center">
+            <p className="text-sm font-semibold text-DARK-subtext hidden md:block md:w-40 text-center">
                 Maickol R.
-            </ul>
+            </p>
 
             <ul className="
             flex items-center gap-5 md:gap-12 
@@ -87,14 +87,14 @@ export default function Header(){
                         : 'opacity-0 translate-x-4 pointer-events-none'
                 }`}
             >
-                <ul className="hidden md:flex md:flex-row md:gap-5 md:w-40">
+                <div className="hidden md:flex md:flex-row md:gap-5 md:w-40">
                     <SocialButton 
                         Options="document" 
                         text={"Descargar CV"} 
                         href="/CV_MAICKOL_RIVERA.pdf" 
                         download
                     />
-                </ul>
+                </div>
             </div>
         </header>
     )
