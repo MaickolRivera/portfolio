@@ -11,7 +11,7 @@ const About = lazy(() => import("./sections/About"));
 const Contact = lazy(() => import("./sections/Contact"));
 
 const SectionLoader = () => (
-  <div className="w-full min-h-[200px] flex items-center justify-center">
+  <div className="w-full h-[100vh] flex items-center justify-center">
     <div className="animate-pulse text-gray-400">Loading...</div>
   </div>
 );
@@ -64,25 +64,25 @@ function App() {
           </div>
           
           <div id="experience">
-            <Suspense fallback={<SectionLoader />}>
+            <Suspense>
               <Experience />
             </Suspense>
           </div>
     
           <div id="projects">
-            <Suspense fallback={<SectionLoader />}>
+            <Suspense>
               <Projects />
             </Suspense>
           </div>
           
           <div id="about-me">
-            <Suspense fallback={<SectionLoader />}>
+            <Suspense>
               <About />
             </Suspense>
           </div>
           
           <div>
-            <Suspense fallback={<SectionLoader />}>
+            <Suspense>
               <Contact />
             </Suspense>
           </div>
