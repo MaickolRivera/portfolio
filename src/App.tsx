@@ -1,6 +1,5 @@
 import Home from "./sections/Home"
 import Header from "./sections/Header";
-import RadialGradient from "./components/RadialGradient";
 import Moon from "./assets/icons/switch_icons/Moon";
 import Sun from "./assets/icons/switch_icons/Sun";
 import SwitchOption from "./components/SwitchOption";
