@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProjectsCode from "../assets/icons/ProjectsCode";
+import ProjectsCode from "../assets/icons/section_icons/ProjectsIcon";
 import SwitchOption from "../components/SwitchOption";
 import ColumnsListIcon from "../assets/icons/switch_icons/ColumnsListIcon";
 import StarBackground from "../components/StarBackground";

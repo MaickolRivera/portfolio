@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
 
 function App() {
 
@@ -56,6 +57,10 @@ function App() {
           <Home></Home>
         </div>
         
+        <div id="experience">
+          <Experience></Experience>
+        </div>
+
         <div id="projects">
           <Projects></Projects>
         </div>

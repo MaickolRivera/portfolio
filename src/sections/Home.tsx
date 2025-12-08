@@ -13,7 +13,7 @@ export default function Home(){
             <StarBackground 
                 widthBackground={60} 
                 heightBackground={60} 
-                starCount={160} 
+                starCount={100} 
                 topOffset={-80} 
             />
             

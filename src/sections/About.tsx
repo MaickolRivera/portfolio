@@ -1,4 +1,4 @@
-import AboutCode from "../assets/icons/AboutCode";
+import AboutCode from "../assets/icons/section_icons/AboutIcon";
 import StarBackground from "../components/StarBackground";
 import AboutGrid from "./sub_sections/AboutGrid";
 
