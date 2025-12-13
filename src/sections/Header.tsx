@@ -57,8 +57,8 @@ export default function Header(){
             </p>
 
             <ul className="
-            flex items-center gap-5 md:gap-12 
-            pt-1 pb-1 px-5 md:py-1.5 md:px-12 
+            flex items-center gap-4 md:gap-12 
+            pt-1 pb-1 px-4 md:py-1.5 md:px-12 
             border-1 gradient-menu rounded-xl border-DARK-text/10 dark:border-DARK-border">
                 {
                     navItems.map((item) => (

@@ -4,7 +4,12 @@ import AboutGrid from "./sub_sections/AboutGrid";
 
 export default function About(){
     return(
-        <section className="flex items-center flex-col gap-3 w-full px-5 my-80 relative">
+        <section 
+        id="about-me"
+        className="
+        flex items-center flex-col gap-3
+        w-full px-5 relative pt-25 my-60
+        md:pt-30">
 
             <div className="flex flex-col items-center gap-3">
                 <AboutCode color="gray"/>

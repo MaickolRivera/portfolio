@@ -2,13 +2,24 @@ import Arrow from "../assets/icons/Arrow";
 import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
+import { navItems } from "./sub_sections/NavItems";
 
 export default function Home(){
 
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if(element){
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+        console.log('asdfasdf')
+    };
+
     return(
-        <section className="
-        flex items-center flex-col gap-4
-        relative w-screen h-full mt-55 px-5 pb-100">
+        <section 
+        id="home"
+        className="
+        flex items-center flex-col gap-4 pb-80
+        relative w-screen h-full md:px-5 md:pb-100">
 
             <StarBackground 
                 widthBackground={60} 
@@ -17,7 +28,7 @@ export default function Home(){
                 topOffset={-80} 
             />
             
-            <div className="flex flex-row items-center gap-5">
+            <div className="flex flex-row items-center gap-5 mt-55">
                 <Line></Line>
                 <p className="text-lg text-gradient text-center block">
                     Bienvenido
@@ -40,7 +51,7 @@ export default function Home(){
                 </h2>
 
                 <p className="
-                mt-4 opacity-80 text-gradient text-center text-sm max-w-[20rem] 
+                mt-4 opacity-80 text-gradient text-center text-sm max-w-[20rem]
                 md:text-md/6 md:max-w-[30rem]">
                     +2 años de experiencia creando Software. 
                     <br/> Especializado en el desarrollo de aplicaciones web.
@@ -59,18 +70,21 @@ export default function Home(){
                     />
             </div>
 
-            <a 
-            href="#projects" 
-            aria-label="projects section"
-            className="arrow absolute bottom-25 md:bottom-12"> 
-                <Arrow 
-                size="23" 
-                className="opacity-50"/>
-            </a>
+                <button 
+                    className="arrow absolute bottom-25 md:bottom-12 z-10 cursor-pointer"
+                    onClick={() => scrollToSection(navItems[1].id)}
+                >
+                    <Arrow 
+                        size="25" 
+                        className="opacity-50"
+                    />
+                </button>
+
+
 
             <svg 
             width="1642" height="353" viewBox="0 0 1642 353" fill="none" xmlns="http://www.w3.org/2000/svg" 
-            className="absolute bottom-[-80px]">
+            className="absolute bottom-[-100px]">
                 <ellipse cx="821.5" cy="994.5" rx="996.5" ry="994.5" 
                 fill="url(#paint0_linear_553_670)" fillOpacity="0.1"/>
                 <defs>

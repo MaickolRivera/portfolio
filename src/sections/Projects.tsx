@@ -13,9 +13,12 @@ export default function Projects(){
     const [typeList, setTypeList] = useState<List>("SLIDER");
 
     return(
-        <section className="
+        <section 
+        id="projects"
+        className="
         flex items-center gap-5 flex-col 
-        px-5 w-full relative my-80">
+        px-5 w-full relative pt-25 my-60
+        md:pt-40">
 
             <div className="flex flex-col items-center gap-3">
                     <ProjectsCode color="gray"/>

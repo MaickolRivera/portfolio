@@ -5,7 +5,12 @@ import { experienceItems } from "./sub_sections/ExperienceItems";
 
 export default function Experience(){
     return(
-        <section className="w-[100vw] relative flex flex-col justify-center items-center gap-5 my-80">
+        <section 
+        id="experience" 
+        className="
+        w-[100vw] relative flex flex-col justify-center items-center gap-5 
+        pt-25 my-50 md:pt-35 md:my-55">
+        
             <StarBackground 
                 widthBackground={50} 
                 heightBackground={50} 
@@ -14,9 +19,9 @@ export default function Experience(){
                 className="rotate-270 left-[80rem] rounded-b-none"
             />
             
-            <div className="flex flex-col justify-center items-center gap-12">
+            <div  className="flex flex-col justify-center items-center gap-12">
                 
-                <div className="flex flex-col items-center gap-3">
+                <div  className="flex flex-col items-center gap-3">
                     <ExperienceIcon color="gray"></ExperienceIcon>
                     <h2 className="text-2xl text-center text-gradient font-semibold">
                         EXPERIENCIA
@@ -46,10 +51,10 @@ export default function Experience(){
             </div>
 
             <div className="
-                absolute pointer-events-none
+                absolute pointer-events-none opacity-50
                 right-0 top-[10%] md:top-[20%] md:right-[77%] ">
                     <RadialGradient
-                        size="600"
+                        size="800"
                         gradient="gradient-radial-project"
                     />
             </div>

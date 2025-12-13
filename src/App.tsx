@@ -57,25 +57,25 @@ function App() {
         <Header></Header>
         
         <main>
-          <div id="home">
+          <div>
             <Suspense fallback={<SectionLoader />}>
               <Home />
             </Suspense>
           </div>
           
-          <div id="experience">
+          <div>
             <Suspense>
               <Experience />
             </Suspense>
           </div>
     
-          <div id="projects">
+          <div>
             <Suspense>
               <Projects />
             </Suspense>
           </div>
           
-          <div id="about-me">
+          <div >
             <Suspense>
               <About />
             </Suspense>
