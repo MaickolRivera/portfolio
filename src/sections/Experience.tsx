@@ -1,7 +1,8 @@
 import { BriefcaseIcon } from "../assets/icons/nav_icons/NavIcons";
 import RadialGradient from "../components/RadialGradient";
 import StarBackground from "../components/StarBackground";
-import { experienceItems } from "./sub_sections/ExperienceItems";
+import ExperienceChart from "../components/ExperienceChart";
+import { experienceItems, timelineItems } from "./sub_sections/ExperienceItems";
 
 export default function Experience(){
     return(
@@ -9,7 +10,7 @@ export default function Experience(){
         id="experience" 
         className="
         w-screen relative flex flex-col justify-center items-center gap-5 
-        pt-20 my-0 md:pt-35 md:my-55">
+        pt-20 my-0 md:pt-35 md:my-50">
         
             <StarBackground 
                 widthBackground={50} 
@@ -19,14 +20,16 @@ export default function Experience(){
                 className="rotate-270 left-320 rounded-b-none"
             />
             
-            <div  className="flex flex-col justify-center items-center gap-12">
+            <div  className="flex flex-col justify-center items-center gap-0">
                 
-                <div  className="flex flex-row items-center gap-3">
-                    <BriefcaseIcon size={25} className="text-subtext"></BriefcaseIcon>
+                <div  className="flex flex-row items-center gap-2">
+                    <BriefcaseIcon size={25} className="text-subtext/80"></BriefcaseIcon>
                     <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
                         EXPERIENCIA
                     </h2>
-                </div> 
+                </div>
+
+                <ExperienceChart items={timelineItems} className="max-w-180" />
 
                 <ol className="flex flex-col w-full max-w-210">
                     {

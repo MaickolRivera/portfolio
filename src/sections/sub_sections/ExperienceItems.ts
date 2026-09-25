@@ -52,3 +52,10 @@ export const experienceItems = [
         ],
     },
 ];
+
+export const timelineItems: { label: string; from: [number, number]; to?: [number, number] }[] = [
+    { label: "Fullstack Jr · Freelance", from: [2024, 10] },
+    { label: "Analista de Datos · Open English", from: [2026, 3], to: [2026, 8] },
+    { label: "Analista de Datos · EXPERTA", from: [2025, 10], to: [2025, 12] },
+    { label: "Formulador · Promise", from: [2025, 3], to: [2025, 9] },
+];
