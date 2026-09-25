@@ -28,10 +28,8 @@ export default function ExperienceChart({ items, className = "" }: ExperienceCha
   const pct = (value: number) => ((value - minYear) / (maxYear - minYear)) * 100;
 
   return (
-    <div className={`${className}
-      w-full overflow-x-auto
-    `}>
-      <div className="relative border-b border-t border-edge min-w-xl p-5 my-20 font-mono text-xs">
+    <div className={`${className} hidden md:block w-full`}>
+      <div className="relative border-b border-t border-edge p-5 my-15 font-mono text-xs">
 
         <ul className="flex flex-col gap-1 mt-4">
           {rows.map((row) => {
