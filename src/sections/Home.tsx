@@ -29,15 +29,14 @@ export default function Home(){
             
             <div className="
             w-full max-w-6xl px-6 mt-40 z-10
-            flex flex-col gap-5
-            md:flex-row md:items-center md:justify-between md:mt-55">
+            flex flex-col gap-5 md:gap-15 lg:gap-40
+            md:flex-row md:items-center md:justify-center md:mt-55">
 
-                <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-col items-start gap-5">
                     <div className="
                     flex items-center gap-2 py-1 px-1
                     border rounded-full backdrop-blur-md text-xs
-                    bg-glass border-edge text-soft
-                    shadow-lg shadow-black/20">
+                    bg-glass border-edge text-soft">
                         <span className="relative flex size-2 ml-1.5">
                             <span className="absolute inline-flex size-full rounded-full bg-green-300 opacity-75 animate-ping" />
                             <span className="relative inline-flex size-2 rounded-full bg-green-300" />
@@ -64,18 +63,11 @@ export default function Home(){
                         </p>
                     </div>
 
-                    <div className="mt-2">
-                            <SocialButton
-                                Options="document"
-                                text={"Descargar CV"}
-                                href="/CV_MAICKOL_RIVERA.pdf"
-                                download
-                            />
-                    </div>
+                    <SocialButton Options="document" text={"Descargar CV"} href="/CV_MAICKOL_RIVERA.pdf" download/>
                 </div>
 
                 <Terminal
-                    className="md:max-w-lg"
+                    className="md:max-w-lg mt-5 md:mt-0"
                     lines={[
                         { label: "Correo", value: "msrivera.msro@gmail.com" },
                         { label: "Ubicación", value: "Bogotá D.C. - Colombia" },
@@ -85,17 +77,11 @@ export default function Home(){
                 />
             </div>
 
-                <button 
-                    className="arrow absolute bottom-25 md:bottom-12 z-10 cursor-pointer"
-                    onClick={() => scrollToSection(navItems[1].id)}
-                >
-                    <Arrow 
-                        size="25" 
-                        className="opacity-50"
-                    />
-                </button>
-
-
+            <button 
+            className="arrow absolute bottom-25 md:bottom-12 z-10 cursor-pointer"
+            onClick={() => scrollToSection(navItems[1].id)}>
+                <Arrow size="25" className="opacity-50"/>
+            </button>
 
             <svg 
             width="1642" height="353" viewBox="0 0 1642 353" fill="none" xmlns="http://www.w3.org/2000/svg" 

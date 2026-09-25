@@ -13,7 +13,7 @@ type TerminalProps = {
 export default function Terminal({ user = "maickol@portfolio", command = "neofetch", lines, className = "" }: TerminalProps) {
   return (
     <div className={`${className}
-      w-full overflow-hidden border rounded-xl font-mono text-xs md:text-sm
+      w-auto overflow-hidden border rounded-xl font-mono text-xs md:text-sm
       border-line bg-surface
     `}>
       <div className="flex items-center gap-2 px-4 py-3 border-b
