@@ -8,7 +8,7 @@ const About = lazy(() => import("./sections/About"));
 const Contact = lazy(() => import("./sections/Contact"));
 
 const SectionLoader = () => (
-  <div className="w-full h-[100vh] flex items-center justify-center">
+  <div className="w-full h-screen flex items-center justify-center">
     <div className="animate-pulse text-gray-400">Loading...</div>
   </div>
 );
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div 
-      className="w-[100vw] h-full flex justify-center flex-col overflow-hidden
+      className="w-screen h-full flex justify-center flex-col overflow-hidden
       bg-LIGHT-background text-LIGHT-text
       dark:bg-DARK-background dark:text-DARK-text"
     >

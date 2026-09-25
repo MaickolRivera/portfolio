@@ -2,6 +2,7 @@ import Arrow from "../assets/icons/Arrow";
 import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
+import Terminal from "../components/Terminal";
 import { navItems } from "./sub_sections/NavItems";
 
 export default function Home(){
@@ -11,7 +12,6 @@ export default function Home(){
         if(element){
             element.scrollIntoView({behavior: 'smooth'});
         }
-        console.log('asdfasdf')
     };
 
     return(
@@ -28,46 +28,60 @@ export default function Home(){
                 topOffset={-80} 
             />
             
-            <div className="flex flex-row items-center gap-5 mt-55">
-                <Line></Line>
-                <p className="text-lg text-gradient text-center block">
-                    Bienvenido
-                </p>
-                <Line classList="rotate-180"></Line>
-            </div>
-
-            <div className="flex flex-col items-center">
-                
-                <h1 className="
-                text-3xl tracking-wide font-semibold text-gradient text-center
-                md:text-4xl">
-                    MAICKOL RIVERA <br />
-                </h1>
-                
-                <h2 className="
-                typewriter text-center text-gradient text-3xl 
-                md:text-4xl/11">
-                    Desarrollador Web
-                </h2>
-
-                <p className="
-                mt-4 opacity-80 text-gradient text-center text-sm max-w-[20rem]
-                md:text-md/6 md:max-w-[30rem]">
-                    +2 años de experiencia creando Software. 
-                    <br/> Especializado en el desarrollo de aplicaciones web.
-                </p>
-            </div>
-
             <div className="
-            hidden 
-            md:flex md:flex-row md:gap-5 md:w-40 md:mt-5">
-                    <SocialButton 
-                        Options="document" 
-                        text={"Descargar CV"} 
-                        href="/CV_MAICKOL_RIVERA.pdf"
-                        className="py-2.5" 
-                        download
-                    />
+            w-full max-w-6xl px-6 mt-40 z-10
+            flex flex-col gap-12
+            md:flex-row md:items-center md:justify-between md:mt-55">
+
+                <div className="flex flex-col items-start gap-4">
+                    <div className="flex flex-row items-center gap-3">
+                        <Line></Line>
+                        <p className="text-lg text-gradient">
+                            Bienvenido
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col items-start">
+                        <h1 className="
+                        text-3xl font-semibold 
+                        md:text-5xl">
+                            MAICKOL RIVERA
+                        </h1>
+
+                        <h2 className="
+                        typewriter mx-0! font-semibold text-2xl
+                        md:text-3xl/11">
+                            Desarrollador Web
+                        </h2>
+
+                        <p className="
+                        mt-4 text-LIGHT-subtext dark:text-DARK-subtext text-sm max-w-[20rem] md:max-w-[25rem]">
+                            Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios — mejorados con experiencia real en datos e IA
+                        </p>
+                    </div>
+
+                    <div className="
+                    hidden
+                    md:flex md:flex-row md:gap-5 md:w-40 md:mt-5">
+                            <SocialButton
+                                Options="document"
+                                text={"Descargar CV"}
+                                href="/CV_MAICKOL_RIVERA.pdf"
+                                className="py-2.5"
+                                download
+                            />
+                    </div>
+                </div>
+
+                <Terminal
+                    className="md:max-w-lg"
+                    lines={[
+                        { label: "Ubicación", value: "Bogotá D.C., Colombia" },
+                        { label: "Correo", value: "msrivera.msro@gmail.com" },
+                        { label: "Estudiando", value: "Ingeniería de Software" },
+                        { label: "Experiencia", value: "Data e Inteligencia Artificial (RAG, LLM)" },
+                    ]}
+                />
             </div>
 
                 <button 
