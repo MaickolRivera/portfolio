@@ -1,4 +1,4 @@
-import ExperienceIcon from "../assets/icons/section_icons/ExperienceIcon";
+import { BriefcaseIcon } from "../assets/icons/nav_icons/NavIcons";
 import RadialGradient from "../components/RadialGradient";
 import StarBackground from "../components/StarBackground";
 import { experienceItems } from "./sub_sections/ExperienceItems";
@@ -21,14 +21,14 @@ export default function Experience(){
             
             <div  className="flex flex-col justify-center items-center gap-12">
                 
-                <div  className="flex flex-col items-center gap-3">
-                    <ExperienceIcon color="gray"></ExperienceIcon>
-                    <h2 className="text-2xl text-center text-gradient font-semibold">
+                <div  className="flex flex-row items-center gap-3">
+                    <BriefcaseIcon size={25} className="text-subtext"></BriefcaseIcon>
+                    <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
                         EXPERIENCIA
                     </h2>
                 </div> 
 
-                <ol className="flex flex-col w-full max-w-230 px-6">
+                <ol className="flex flex-col w-full max-w-210">
                     {
                         experienceItems.map((item, index) => {
                             const isCurrent = index === 0;
