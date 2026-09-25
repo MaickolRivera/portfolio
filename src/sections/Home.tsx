@@ -1,5 +1,4 @@
 import Arrow from "../assets/icons/Arrow";
-import Line from "../assets/icons/Line";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
 import Terminal from "../components/Terminal";
@@ -30,15 +29,21 @@ export default function Home(){
             
             <div className="
             w-full max-w-6xl px-6 mt-40 z-10
-            flex flex-col gap-12
+            flex flex-col gap-5
             md:flex-row md:items-center md:justify-between md:mt-55">
 
                 <div className="flex flex-col items-start gap-4">
-                    <div className="flex flex-row items-center gap-3">
-                        <Line></Line>
-                        <p className="text-lg text-gradient">
-                            Bienvenido
-                        </p>
+                    <div className="
+                    flex items-center gap-2 py-1 px-1
+                    border rounded-full backdrop-blur-md text-xs
+                    bg-LIGHT-button/70 border-DARK-text/10 text-LIGHT-text/80
+                    dark:bg-DARK-button/80 dark:border-DARK-border dark:text-DARK-subtext
+                    shadow-lg shadow-black/20">
+                        <span className="relative flex size-2 ml-1.5">
+                            <span className="absolute inline-flex size-full rounded-full bg-green-300 opacity-75 animate-ping" />
+                            <span className="relative inline-flex size-2 rounded-full bg-green-300" />
+                        </span>
+                        <p className="pr-2 py-0.5 mt-0.5">Disponible para trabajar</p>
                     </div>
 
                     <div className="flex flex-col items-start">
@@ -76,8 +81,8 @@ export default function Home(){
                 <Terminal
                     className="md:max-w-lg"
                     lines={[
-                        { label: "Ubicación", value: "Bogotá D.C., Colombia" },
                         { label: "Correo", value: "msrivera.msro@gmail.com" },
+                        { label: "Ubicación", value: "Bogotá D.C. - Colombia" },
                         { label: "Estudiando", value: "Ingeniería de Software" },
                         { label: "Experiencia", value: "Data e Inteligencia Artificial (RAG, LLM)" },
                     ]}
@@ -98,7 +103,7 @@ export default function Home(){
 
             <svg 
             width="1642" height="353" viewBox="0 0 1642 353" fill="none" xmlns="http://www.w3.org/2000/svg" 
-            className="absolute bottom-[-100px]">
+            className="absolute -bottom-25">
                 <ellipse cx="821.5" cy="994.5" rx="996.5" ry="994.5" 
                 fill="url(#paint0_linear_553_670)" fillOpacity="0.1"/>
                 <defs>
