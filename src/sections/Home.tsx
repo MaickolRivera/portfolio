@@ -28,7 +28,7 @@ export default function Home(){
             />
             
             <div className="
-            w-full max-w-6xl px-6 mt-40 z-10
+            w-full max-w-6xl px-6 mt-20 z-10
             flex flex-col gap-5 md:gap-15 lg:gap-40
             md:flex-row md:items-center md:justify-center md:mt-55">
 
@@ -78,9 +78,9 @@ export default function Home(){
             </div>
 
             <button 
-            className="arrow absolute bottom-25 md:bottom-12 z-10 cursor-pointer"
+            className="arrow absolute bottom-50 md:bottom-12 z-10 cursor-pointer"
             onClick={() => scrollToSection(navItems[1].id)}>
-                <Arrow size="25" className="opacity-50"/>
+                <Arrow size="20" className="opacity-50"/>
             </button>
 
             <svg 
