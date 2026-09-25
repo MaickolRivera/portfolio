@@ -28,26 +28,50 @@ export default function Experience(){
                     </h2>
                 </div> 
 
-                <ul className="flex flex-col gap-12 px-8 md:px-0">
+                <ol className="flex flex-col w-full max-w-230 px-6">
                     {
-                        experienceItems.map((item, index) => (
-                            <li key={index} className="flex justify-center border-l-2 pl-6 border-muted">
-                                
-                                <div className="flex flex-col md:w-162">
-                                    <p className="text-xs text-muted">{item.date}</p>
-                                    <p className="text-base md:text-lg text-main font-semibold mt-1">{item.title}</p>
+                        experienceItems.map((item, index) => {
+                            const isCurrent = index === 0;
+                            const isLast = index === experienceItems.length - 1;
+                            return (
+                                <li
+                                    key={index}
+                                    className="grid grid-cols-[auto_1fr] gap-x-4 md:grid-cols-[6rem_auto_1fr] md:gap-x-6">
 
-                                    <div className="text-sm md:text-base text-subtext mt-3 text-pretty">
-                                        {item.description.map((paragraph, i) => (
-                                            <p key={i} className="mb-2">{paragraph}</p>
-                                        ))}
+                                    <p className="hidden md:block text-xs/5 text-muted text-right">
+                                        {item.start}<br />{item.end}
+                                    </p>
+
+                                    <div className="relative flex justify-center">
+                                        <span className={`relative z-10 mt-0.5 size-4 rounded-full border-2
+                                            ${isCurrent ? 'border-main bg-background' : 'border-edge bg-selected'}`}
+                                        />
+                                        {!isLast && (
+                                            <span className={`absolute top-4.5 bottom-0 w-px
+                                                ${isCurrent ? 'bg-main' : 'bg-edge'}`}
+                                            />
+                                        )}
                                     </div>
-                                </div>
-                            
-                            </li>
-                        ))
+
+                                    <div className={isLast ? '' : 'pb-12'}>
+                                        <p className="md:hidden text-xs text-muted mb-1">{item.start} – {item.end}</p>
+                                        <h3 className="text-base/5 md:text-lg/5 font-semibold text-main">{item.role}</h3>
+                                        <p className="text-sm text-muted mt-1">{item.company}</p>
+
+                                        <ul className="
+                                        flex flex-col gap-1.5 mt-3 pl-4
+                                        list-disc marker:text-muted
+                                        text-sm text-subtext text-pretty">
+                                            {item.description.map((paragraph, i) => (
+                                                <li key={i}>{paragraph}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </li>
+                            );
+                        })
                     }
-                </ul>
+                </ol>
             </div>
 
             <div className="

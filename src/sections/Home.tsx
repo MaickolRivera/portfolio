@@ -54,7 +54,7 @@ export default function Home(){
                         <h2 className="
                         typewriter mx-0! font-semibold text-2xl
                         md:text-3xl/11">
-                            Desarrollador Web
+                            Desarrollador Web ‎ 
                         </h2>
 
                         <p className="
