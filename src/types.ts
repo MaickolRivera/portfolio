@@ -5,3 +5,6 @@ export type Project = {
     repository: string;
     link: string;
   };
+
+export type ThemeKey = "light" | "dark";
+export type LangKey = "es" | "en";
