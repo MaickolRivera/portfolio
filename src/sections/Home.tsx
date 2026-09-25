@@ -65,14 +65,11 @@ export default function Home(){
                         </p>
                     </div>
 
-                    <div className="
-                    hidden
-                    md:flex md:flex-row md:gap-5 md:w-40 md:mt-5">
+                    <div className="mt-2">
                             <SocialButton
                                 Options="document"
                                 text={"Descargar CV"}
                                 href="/CV_MAICKOL_RIVERA.pdf"
-                                className="py-2.5"
                                 download
                             />
                     </div>

@@ -28,14 +28,13 @@ export default function SocialButton({
     <a
       href={href}
       className={` ${className} 
-      items-center justify-between flex gap-3 flex-row text-sm py-2 px-5
-      gradient-menu border-1 rounded-lg border-DARK-text/10 dark:border-DARK-border 
+      items-center justify-between flex gap-3 flex-row text-xs px-4 py-2
+      gradient-menu border rounded-full 
+      
+      border-DARK-text/10 dark:border-DARK-border 
       
       text-LIGHT-text hover:text-LIGHT-subtext 
-      dark:text-DARK-unselected dark:hover:text-DARK-text 
-      
-      hover:text-LIGHT-subtext text-LIGHT-text 
-      dark:hover:text-DARK-subtext dark:text-DARK-unselected
+      dark:text-DARK-subtext dark:hover:text-DARK-text
        `
       }
       target={target}
@@ -56,7 +55,9 @@ export default function SocialButton({
           ) : null
         }
 
-      {text}
+      <p className="pt-0.5">
+        {text}
+      </p>
     </a>
   );
 }
