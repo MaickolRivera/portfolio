@@ -6,20 +6,49 @@ html {
     scroll-behavior: smooth;
 }
 
-@theme {
-    --color-DARK-background: #111213;
-    --color-DARK-button: #131315;
-    --color-DARK-text: #fff;
-    --color-DARK-subtext: #DBDBE2;
-    --color-DARK-selected: #16161B;
-    --color-DARK-unselected: #8C8C8E;
-    --color-DARK-border: #3D3D41;
+@theme inline {
+    --color-background: var(--background);
+    --color-main: var(--main);
+    --color-soft: var(--soft);
+    --color-subtext: var(--subtext);
+    --color-muted: var(--muted);
+    --color-selected: var(--selected);
+    --color-surface: var(--surface);
+    --color-chip: var(--chip);
+    --color-line: var(--line);
+    --color-edge: var(--edge);
+    --color-glass: var(--glass);
+    --color-active: var(--active);
+}
 
-    --color-LIGHT-background: #FEFCF3;
-    --color-LIGHT-button: #e9e9e9;
-    --color-LIGHT-text: #222;
-    --color-LIGHT-subtext: #777;
-    --color-LIGHT-selected: #ccc;
+:root {
+    --background: #FEFCF3;
+    --main: #222;
+    --soft: #222;
+    --subtext: #777;
+    --muted: #777;
+    --selected: #ccc;
+    --surface: rgb(204 204 204 / 0.2);
+    --chip: rgb(204 204 204 / 0.6);
+    --line: rgb(119 119 119 / 0.2);
+    --edge: rgb(34 34 34 / 0.1);
+    --glass: rgb(233 233 233 / 0.7);
+    --active: rgb(204 204 204 / 0.7);
+}
+
+.dark {
+    --background: #111213;
+    --main: #fff;
+    --soft: #DBDBE2;
+    --subtext: #DBDBE2;
+    --muted: #8C8C8E;
+    --selected: #16161B;
+    --surface: rgb(22 22 27 / 0.4);
+    --chip: #16161B;
+    --line: rgb(219 219 226 / 0.2);
+    --edge: #3D3D41;
+    --glass: rgb(19 19 21 / 0.8);
+    --active: rgb(255 255 255 / 0.1);
 }
 
 .typewriter {

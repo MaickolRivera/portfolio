@@ -20,7 +20,7 @@ type SwitchOptionProps<T> = {
     };
   
     return (
-      <div className="py-0.5 px-1 border-1 text-xs items-center flex gradient-menu border-DARK-text/10 rounded-lg">
+      <div className="py-0.5 px-1 border-1 text-xs items-center flex gradient-menu border-edge rounded-lg">
         {options.map((option, index) => {
           const value = values[index];
           const isSelected = value === selectedValue;
@@ -31,7 +31,7 @@ type SwitchOptionProps<T> = {
               key={index}
               onClick={() => handleSelected(value)}
               className={`${
-                isSelected ? "bg-LIGHT-selected dark:bg-DARK-selected" : " opacity-35"
+                isSelected ? "bg-selected" : " opacity-35"
               } cursor-pointer px-3.5 py-2 rounded-md`}
             >
               {option}

@@ -31,10 +31,9 @@ export default function SocialButton({
       items-center justify-between flex gap-3 flex-row text-xs px-4 py-2
       gradient-menu border rounded-full 
       
-      border-DARK-text/10 dark:border-DARK-border 
+      border-edge 
       
-      text-LIGHT-text hover:text-LIGHT-subtext 
-      dark:text-DARK-subtext dark:hover:text-DARK-text
+      text-soft hover:text-main 
        `
       }
       target={target}

@@ -8,7 +8,7 @@ export default function Experience(){
         <section 
         id="experience" 
         className="
-        w-[100vw] relative flex flex-col justify-center items-center gap-5 
+        w-screen relative flex flex-col justify-center items-center gap-5 
         pt-25 my-50 md:pt-35 md:my-55">
         
             <StarBackground 
@@ -16,7 +16,7 @@ export default function Experience(){
                 heightBackground={50} 
                 starCount={80} 
                 topOffset={220} 
-                className="rotate-270 left-[80rem] rounded-b-none"
+                className="rotate-270 left-320 rounded-b-none"
             />
             
             <div  className="flex flex-col justify-center items-center gap-12">
@@ -31,13 +31,13 @@ export default function Experience(){
                 <ul className="flex flex-col gap-12 px-8 md:px-0">
                     {
                         experienceItems.map((item, index) => (
-                            <li key={index} className="flex justify-center border-l-2 pl-6 border-DARK-unselected">
+                            <li key={index} className="flex justify-center border-l-2 pl-6 border-muted">
                                 
-                                <div className="flex flex-col md:w-[40.5rem]">
-                                    <p className="text-xs dark:text-DARK-unselected">{item.date}</p>
-                                    <p className="text-base md:text-lg dark:text-DARK-text font-semibold mt-1">{item.title}</p>
+                                <div className="flex flex-col md:w-162">
+                                    <p className="text-xs text-muted">{item.date}</p>
+                                    <p className="text-base md:text-lg text-main font-semibold mt-1">{item.title}</p>
 
-                                    <div className="text-sm md:text-base text-LIGHT-subtext dark:text-DARK-subtext mt-3 text-pretty">
+                                    <div className="text-sm md:text-base text-subtext mt-3 text-pretty">
                                         {item.description.map((paragraph, i) => (
                                             <p key={i} className="mb-2">{paragraph}</p>
                                         ))}

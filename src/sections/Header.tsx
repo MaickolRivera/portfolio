@@ -77,8 +77,7 @@ export default function Header(){
             <div
                 aria-hidden="true"
                 className="absolute inset-x-0 top-0 h-[calc(100%+1.5rem)] -z-10
-                bg-linear-to-b from-LIGHT-background via-LIGHT-background/80 to-transparent
-                dark:from-DARK-background dark:via-DARK-background/80
+                bg-linear-to-b from-background via-background/80 to-transparent
                 backdrop-blur-[2px]
                 mask-[linear-gradient(to_bottom,black_10%,transparent)]"
             />
@@ -86,8 +85,7 @@ export default function Header(){
             <nav className="pointer-events-auto
             flex items-center gap-1 py-1 px-1.5
             border rounded-full backdrop-blur-md
-            bg-LIGHT-button/70 border-DARK-text/10
-            dark:bg-DARK-button/80 dark:border-DARK-border
+            bg-glass border-edge
             shadow-lg shadow-black/20">
                 <ul className="flex items-center gap-0.5 md:gap-1">
                     {
@@ -102,8 +100,8 @@ export default function Header(){
                                         transition-colors duration-200 cursor-pointer
                                         ${isHome ? 'p-2' : 'p-2 md:px-3 md:py-1.5'}
                                         ${isActive
-                                            ? 'bg-LIGHT-selected/70 text-LIGHT-text dark:bg-DARK-text/10 dark:text-DARK-text'
-                                            : 'text-LIGHT-text/60 dark:text-DARK-unselected hover:text-LIGHT-text dark:hover:text-DARK-text'
+                                            ? 'bg-active text-main'
+                                            : 'text-muted hover:text-main'
                                         }`}
                                         aria-label={item.label}
                                         title={item.title}
@@ -121,12 +119,12 @@ export default function Header(){
                     }
                 </ul>
 
-                <span className="w-px h-5 mx-1 bg-LIGHT-text/15 dark:bg-DARK-border" aria-hidden="true" />
+                <span className="w-px h-5 mx-1 bg-edge" aria-hidden="true" />
 
                 <button
                     onClick={toggleTheme}
                     className="p-2 rounded-full cursor-pointer transition-colors duration-200
-                    text-LIGHT-text/60 hover:text-LIGHT-text dark:text-DARK-unselected dark:hover:text-DARK-text"
+                    text-muted hover:text-main"
                     aria-label={theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
                     title={theme === "dark" ? "Modo claro" : "Modo oscuro"}
                 >
@@ -137,7 +135,7 @@ export default function Header(){
                     onClick={toggleLang}
                     className="flex items-center pl-1 pr-3 rounded-full cursor-pointer transition-colors duration-200
                     text-xs font-semibold uppercase
-                    text-LIGHT-text/60 hover:text-LIGHT-text dark:text-DARK-unselected dark:hover:text-DARK-text"
+                    text-muted hover:text-main"
                     aria-label="Cambiar idioma"
                     title="Change Language"
                 >

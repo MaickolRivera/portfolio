@@ -36,8 +36,7 @@ export default function Home(){
                     <div className="
                     flex items-center gap-2 py-1 px-1
                     border rounded-full backdrop-blur-md text-xs
-                    bg-LIGHT-button/70 border-DARK-text/10 text-LIGHT-text/80
-                    dark:bg-DARK-button/80 dark:border-DARK-border dark:text-DARK-subtext
+                    bg-glass border-edge text-soft
                     shadow-lg shadow-black/20">
                         <span className="relative flex size-2 ml-1.5">
                             <span className="absolute inline-flex size-full rounded-full bg-green-300 opacity-75 animate-ping" />
@@ -60,7 +59,7 @@ export default function Home(){
                         </h2>
 
                         <p className="
-                        mt-4 text-LIGHT-subtext dark:text-DARK-subtext text-sm max-w-[20rem] md:max-w-[25rem]">
+                        mt-4 text-subtext text-sm max-w-[20rem] md:max-w-100">
                             Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios — mejorados con experiencia real en datos e IA
                         </p>
                     </div>

@@ -47,8 +47,7 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
       relative max-w-[19rem] h-full overflow-hidden border-1 rounded-xl px-2 py-2
       md:max-w-[45rem] md:h-[320px] md:px-6
 
-      border-LIGHT-subtext/20 bg-LIGHT-selected/20
-      dark:border-DARK-subtext/20 dark:bg-DARK-selected">
+      border-line bg-surface">
         
         <div className="
         right-0 top-0 w-full
@@ -77,8 +76,8 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
         w-full h-full pt-41 px-5 pb-12
         md:max-w-[45%] md:justify-center md:pb-0 md:pt-2">
 
-          <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{current.title}</p>
-          <p className="text-sm/5 text-LIGHT-subtext dark:text-DARK-unselected">{current.description}</p> 
+          <p className="text-lg font-semibold text-main">{current.title}</p>
+          <p className="text-sm/5 text-muted">{current.description}</p> 
 
           <div className="
           flex flex-row gap-2 items-center
@@ -94,13 +93,12 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
               flex flex-row items-center gap-3
               opacity-70 border-1 rounded-lg py-2 px-3.5
 
-              bg-LIGHT-selected/60 border-LIGHT-text/10
-              dark:bg-DARK-selected dark:border-DARK-text/10
+              bg-chip border-main/10
               hover:opacity-100
               ">
             
               <GitHub 
-                className="py-0.5 text-LIGHT-text dark:text-DARK-text" 
+                className="py-0.5 text-main" 
                 size={16}>
               </GitHub>
             </a>
@@ -114,13 +112,12 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
               flex flex-row items-center gap-3
               opacity-70 border-1 rounded-lg py-2 px-3.5
               
-              bg-LIGHT-selected/60 border-LIGHT-text/10
-              dark:bg-DARK-selected dark:border-DARK-text/10
+              bg-chip border-main/10
               hover:opacity-100
               ">
             
-              <Link className="text-LIGHT-text dark:text-DARK-text" size={15}></Link>
-              <p className="text-sm text-LIGHT-text dark:text-DARK-subtext">Visitar</p>
+              <Link className="text-main" size={15}></Link>
+              <p className="text-sm text-soft">Visitar</p>
 
             </a>
           </div>
@@ -136,11 +133,11 @@ export default function SliderList({ autoPlay = true}: SliderListProps) {
             key={i} 
             className="
             w-1/3 h-1 rounded-full overflow-hidden
-            bg-LIGHT-text/30 dark:bg-DARK-text/30">
+            bg-main/30">
               
               <div
                 className={`h-full rounded-full transition-all duration-500 4s ease-in-out ${
-                  selectedIndex >= i ? "bg-LIGHT-text/80 dark:bg-DARK-text/80" : "bg-transparent"
+                  selectedIndex >= i ? "bg-main/80" : "bg-transparent"
                 }`}
               ></div>
             </div>

@@ -72,7 +72,7 @@ md:max-w-[65rem] md:px-0 md:grid-cols-4 md:grid-rows-4
     col-start-1 row-start-5
     md:col-start-1 md:row-start-1"
     title="+5">
-        <p className="font-normal text-LIGHT-subtext dark:text-DARK-unselected">
+        <p className="font-normal text-muted">
             Proyectos
         </p>
     </SmallBox>
@@ -82,7 +82,7 @@ md:max-w-[65rem] md:px-0 md:grid-cols-4 md:grid-rows-4
     col-start-2 row-start-5
     md:col-start-4 md:row-start-1"
     title="+9">
-        <p className="w-36 text-center text-base/4.5 font-normal text-LIGHT-subtext dark:text-DARK-unselected">
+        <p className="w-36 text-center text-base/4.5 font-normal text-muted">
             Meses de Experiencia
         </p>
     </SmallBox>
@@ -92,7 +92,7 @@ md:max-w-[65rem] md:px-0 md:grid-cols-4 md:grid-rows-4
     col-start-1 row-start-6
     md:col-start-4 md:row-start-2"
     title="+2">
-        <p className="w-36 text-center text-base/4.5 font-normal text-LIGHT-subtext dark:text-DARK-unselected">    
+        <p className="w-36 text-center text-base/4.5 font-normal text-muted">    
             Años Desarrollando
         </p>
     </SmallBox>
@@ -102,7 +102,7 @@ md:max-w-[65rem] md:px-0 md:grid-cols-4 md:grid-rows-4
     col-start-2 row-start-6
     md:col-start-4 md:row-start-3" 
     title="B1">
-        <p className="font-normal text-LIGHT-subtext dark:text-DARK-unselected">
+        <p className="font-normal text-muted">
             Nivel de Ingles
         </p>
     </SmallBox>
@@ -114,7 +114,7 @@ md:max-w-[65rem] md:px-0 md:grid-cols-4 md:grid-rows-4
     col-span-2 row-start-7
     md:col-span-1 md:col-start-4 md:row-start-4">
         <SmallBox title="3">
-            <p className="font-normal text-LIGHT-subtext dark:text-DARK-unselected">
+            <p className="font-normal text-muted">
                Contribuciones
             </p>
         </SmallBox>

@@ -10,18 +10,17 @@ import { projectsItems } from "./ProjectsItems";
           projectsItems.map(({ title, description, img, repository, link }) => (
               <div className="
               flex flex-col gap-5 
-              relative max-w-[20rem] h-full overflow-hidden border-1 rounded-xl px-2 py-2
-              md:max-w-[45rem] md:h-[320px] md:px-6
+              relative max-w-[20rem] h-full overflow-hidden border rounded-xl px-2 py-2
+              md:max-w-180 md:h-80 md:px-6
 
-              border-LIGHT-subtext/20 bg-LIGHT-selected/20
-              dark:border-DARK-subtext/20 dark:bg-DARK-selected">
+              border-line bg-surface">
 
               <img
                 src={img}
                 alt={title}
                 className="
                 right-0 top-0 w-full
-                md:absolute md:right-[-200px] md:top-[40px] md:w-[580px]"
+                md:absolute md:-right-50 md:top-10 md:w-145"
               />
 
               <div className="
@@ -29,8 +28,8 @@ import { projectsItems } from "./ProjectsItems";
               w-full h-full pt-41 px-5 pb-12
               md:max-w-[45%] md:justify-center md:pb-0 md:pt-2">
                 
-                <p className="text-lg font-semibold text-LIGHT-text dark:text-DARK-text">{title}</p>
-                <p className="text-sm/5 text-LIGHT-subtext dark:text-DARK-unselected">{description}</p> 
+                <p className="text-lg font-semibold text-main">{title}</p>
+                <p className="text-sm/5 text-muted">{description}</p> 
 
                 <div className="
                 flex flex-row gap-2 items-center
@@ -42,11 +41,10 @@ import { projectsItems } from "./ProjectsItems";
                   aria-label="Look at the repository project" 
                   target="_blank" 
                   className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
-                    bg-LIGHT-selected/60 border-LIGHT-text/10
-                    dark:bg-DARK-selected dark:border-DARK-text/10">
+                    bg-chip border-main/10">
                     
                     <GitHub 
-                      className="py-0.5 text-LIGHT-text dark:text-DARK-text" 
+                      className="py-0.5 text-main" 
                       size={16}>
                     </GitHub>
                   </a>
@@ -58,15 +56,14 @@ import { projectsItems } from "./ProjectsItems";
 
                   className="
                     flex flex-row items-center gap-3
-                    opacity-70 border-1 rounded-lg py-2 px-3.5
+                    opacity-70 border rounded-lg py-2 px-3.5
 
-                    bg-LIGHT-selected/60 border-LIGHT-text/10
-                    dark:bg-DARK-selected dark:border-DARK-text/10
+                    bg-chip border-main/10
                     hover:opacity-100
                     ">
                     
-                    <Link className="text-LIGHT-text dark:text-DARK-text" size={15}></Link>
-                    <p className="text-sm text-LIGHT-text dark:text-DARK-subtext">Visitar</p>
+                    <Link className="text-main" size={15}></Link>
+                    <p className="text-sm text-soft">Visitar</p>
 
                   </a>
                 </div>

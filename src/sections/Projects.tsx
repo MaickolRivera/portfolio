@@ -41,22 +41,21 @@ export default function Projects(){
                         selectedValue={typeList}
                         setSelectedValue={setTypeList}
                         options={[
-                            <SliderListIcon className="text-LIGHT-text dark:text-DARK-text" size={18}/>,
-                            <ColumnsListIcon className="text-LIGHT-text dark:text-DARK-text" size={18}/>
+                            <SliderListIcon className="text-main" size={18}/>,
+                            <ColumnsListIcon className="text-main" size={18}/>
                         ]}
                         values={["SLIDER", "COLUMNS"]}
                     />
                     <p className="
                         text-base font-semibold hidden  
-                        dark:text-DARK-subtext text-LIGHT-subtext
+                        text-subtext
                         md:block">
                             LISTA DE PROYECTOS
                     </p>
 
                 </div>
                 {/* <button className="text-xs cursor-pointer gradient-menu rounded-lg px-4 border-1
-                text-LIGHT-subtext hover:text-LIGHT-text border-LIGHT-text/10
-                dark:text-DARK-subtext dark:hover:text-DARK-text dark:border-DARK-text/10">
+                text-subtext hover:text-main border-main/10">
                     VER TODOS +
                 </button> */}
             </div>
