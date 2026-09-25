@@ -9,7 +9,7 @@ export default function Experience(){
         id="experience" 
         className="
         w-screen relative flex flex-col justify-center items-center gap-5 
-        pt-25 my-50 md:pt-35 md:my-55">
+        pt-20 my-0 md:pt-35 md:my-55">
         
             <StarBackground 
                 widthBackground={50} 

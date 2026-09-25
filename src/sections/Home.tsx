@@ -17,18 +17,18 @@ export default function Home(){
         <section 
         id="home"
         className="
-        flex items-center flex-col gap-4 pb-80
+        flex items-center flex-col gap-4 pb-75
         relative w-screen h-full md:px-5 md:pb-100">
 
             <StarBackground 
                 widthBackground={60} 
                 heightBackground={60} 
                 starCount={100} 
-                topOffset={-80} 
+                topOffset={80} 
             />
             
             <div className="
-            w-full max-w-6xl px-6 mt-20 z-10
+            w-full max-w-6xl px-6 mt-25 z-10
             flex flex-col gap-5 md:gap-15 lg:gap-40
             md:flex-row md:items-center md:justify-center md:mt-55">
 
