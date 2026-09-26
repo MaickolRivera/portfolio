@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 
 export default function BuildTerminal() {
   const steps = ["planeacion", "diseño", "desarrollo", "testing", "despliegue", "optimización"]
-  const totalBlocks = 60
+  const totalBlocks = 50
   const stepDuration = 2000
   const pauseAtEnd = 0
 
@@ -31,15 +31,15 @@ export default function BuildTerminal() {
   return (
     <div className="w-auto overflow-hidden font-mono text-xs md:text-sm">
       <div className="flex items-center gap-2 py-2 border-b border-line">
-        <p className="text-muted">| {percent}% |</p>
+        <p className="text-main">| {percent}% |</p>
         <span className="text-muted">$ build --status</span>
       </div>
 
       <div className="flex flex-row items-center gap-2 py-5">
-        <div className="flex flex-row gap-1">
+        <div className="flex flex-row gap-1.5">
           {[...Array(totalBlocks)].map((_, i) => (
             <p key={i} className={i < filled ? "text-main" : "text-line"}>
-              {i < filled ? "█" : "░"}
+              {i < filled ? <FilledItem/> : <EmptyItem/>}
             </p>
           ))}
         </div>
@@ -53,7 +53,7 @@ export default function BuildTerminal() {
             className={
               showRepeat ? "text-muted"
               : i === stepIndex ? "text-main"
-              : i < stepIndex ? "text-soft"
+              : i < stepIndex ? "text-line"
               : "text-muted"
             }
           >
@@ -63,4 +63,15 @@ export default function BuildTerminal() {
       </div>
     </div>
   )
+}
+
+function FilledItem(){
+    return(
+        <div className="w-2 h-5 bg-main"></div>
+    )
+}
+function EmptyItem(){
+    return(
+        <div className="w-2 h-5 bg-active"></div>
+    )
 }
