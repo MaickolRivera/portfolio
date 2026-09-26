@@ -29,16 +29,16 @@ export default function BuildTerminal() {
   const filled = Math.round((percent / 100) * totalBlocks)
 
   return (
-    <div className="w-auto overflow-hidden font-mono text-xs md:text-sm">
+    <div className="w-85 md:w-170 overflow-hidden font-mono text-xs md:text-sm">
       <div className="flex items-center gap-2 py-2 border-b border-line">
         <p className="text-main">| {percent}% |</p>
         <span className="text-muted">$ build --status</span>
       </div>
 
       <div className="flex flex-row items-center gap-2 py-5">
-        <div className="flex flex-row gap-1.5">
+        <div className="flex flex-row flex-1 gap-0.5 md:gap-1.5">
           {[...Array(totalBlocks)].map((_, i) => (
-            <p key={i} className={i < filled ? "text-main" : "text-line"}>
+            <p key={i} className={`flex-1 max-w-2 ${i < filled ? "text-main" : "text-line"}`}>
               {i < filled ? <FilledItem/> : <EmptyItem/>}
             </p>
           ))}
@@ -50,12 +50,12 @@ export default function BuildTerminal() {
         {steps.map((step, i) => (
           <p
             key={step}
-            className={
+            className={`${i === stepIndex ? "" : "hidden md:block"} ${
               showRepeat ? "text-muted"
               : i === stepIndex ? "text-main"
               : i < stepIndex ? "text-line"
               : "text-muted"
-            }
+            }`}
           >
             {i === stepIndex && !showRepeat ? `> ${step.toUpperCase()}_` : step.toUpperCase()}
           </p>
@@ -67,11 +67,11 @@ export default function BuildTerminal() {
 
 function FilledItem(){
     return(
-        <div className="w-2 h-5 bg-main"></div>
+        <div className="w-full h-5 bg-main"></div>
     )
 }
 function EmptyItem(){
     return(
-        <div className="w-2 h-5 bg-active"></div>
+        <div className="w-full h-5 bg-active"></div>
     )
 }
