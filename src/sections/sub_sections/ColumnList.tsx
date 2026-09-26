@@ -10,7 +10,7 @@ import { projectsItems } from "./ProjectsItems";
           projectsItems.map(({ title, description, img, repository, link }) => (
               <div className="
               flex flex-col gap-5 
-              relative max-w-[20rem] h-full overflow-hidden border rounded-xl px-2 py-2
+              relative max-w-100 h-full overflow-hidden border rounded-xl px-2 py-2
               md:max-w-180 md:h-80 md:px-6
 
               border-line bg-surface">
@@ -19,13 +19,13 @@ import { projectsItems } from "./ProjectsItems";
                 src={img}
                 alt={title}
                 className="
-                right-0 top-0 w-full
+                right-0 top-0 w-full rounded-lg
                 md:absolute md:-right-50 md:top-10 md:w-145"
               />
 
               <div className="
               flex flex-col gap-3
-              w-full h-full pt-41 px-5 pb-12
+              w-full h-full px-5 pb-5
               md:max-w-[45%] md:justify-center md:pb-0 md:pt-2">
                 
                 <p className="text-lg font-semibold text-main">{title}</p>
@@ -33,7 +33,7 @@ import { projectsItems } from "./ProjectsItems";
 
                 <div className="
                 flex flex-row gap-2 items-center
-                mt-2 z-20
+                mt-2
                 md:my-2">
 
                   <a 
