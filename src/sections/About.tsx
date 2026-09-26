@@ -1,4 +1,4 @@
-import AboutCode from "../assets/icons/section_icons/AboutIcon";
+import { UserIcon } from "../assets/icons/nav_icons/NavIcons";
 import StarBackground from "../components/StarBackground";
 import AboutGrid from "./sub_sections/AboutGrid";
 
@@ -11,9 +11,9 @@ export default function About(){
         w-full px-5 relative pt-25 my-60
         md:pt-30">
 
-            <div className="flex flex-col items-center gap-3">
-                <AboutCode color="gray"/>
-                <h2 className="text-2xl text-center text-gradient font-semibold">
+            <div className="flex flex-row items-center gap-4">
+                <UserIcon size={25} className="text-subtext/80"/>
+                <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
                     SOBRE MI
                 </h2>
             </div>

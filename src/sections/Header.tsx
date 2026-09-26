@@ -2,14 +2,15 @@ import { useEffect, useState, type ReactNode } from "react";
 import { navItems } from "./sub_sections/NavItems";
 import Moon from "../assets/icons/switch_icons/Moon";
 import Sun from "../assets/icons/switch_icons/Sun";
-import { HomeIcon, BriefcaseIcon, GridIcon, UserIcon, MailIcon } from "../assets/icons/nav_icons/NavIcons";
+import { HomeIcon, BriefcaseIcon, UserIcon, MailIcon } from "../assets/icons/nav_icons/NavIcons";
 import type { ThemeKey, LangKey } from "../types";
+import ProjectsCode from "../assets/icons/section_icons/ProjectsIcon";
 
 
 const navIcons: Record<string, ReactNode> = {
     "home": <HomeIcon size={15} />,
     "experience": <BriefcaseIcon size={15} />,
-    "projects": <GridIcon size={15} />,
+    "projects": <ProjectsCode size={15} />,
     "about-me": <UserIcon size={15} />,
     "contact": <MailIcon size={15} />,
 };
@@ -108,7 +109,7 @@ export default function Header(){
                                     >
                                         {navIcons[item.id]}
                                         {!isHome && (
-                                            <span className="hidden md:inline pt-0.5">
+                                            <span className="hidden md:inline pt-0.5 pr-1">
                                                 {item.title}
                                             </span>
                                         )}

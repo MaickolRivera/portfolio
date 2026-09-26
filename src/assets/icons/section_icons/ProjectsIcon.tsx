@@ -4,7 +4,7 @@ type ProjectsCodeProps = {
     className?: string;
   };
 
-export default function ProjectsCode({size = 30, color = "black", className = "" }: ProjectsCodeProps) {
+export default function ProjectsCode({size = 30, color = "currentColor", className = "" }: ProjectsCodeProps) {
     return(
         <svg 
         width={size}

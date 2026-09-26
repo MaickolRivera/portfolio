@@ -33,15 +33,6 @@ export function BriefcaseIcon({ size = 16, className = "" }: IconProps) {
   );
 }
 
-export function GridIcon({ size = 16, className = "" }: IconProps) {
-  return (
-    <svg {...base(size, className)}>
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <path d="M3 12h18M12 3v18" />
-    </svg>
-  );
-}
-
 export function UserIcon({ size = 16, className = "" }: IconProps) {
   return (
     <svg {...base(size, className)}>

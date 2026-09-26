@@ -14,15 +14,14 @@ export default function Experience(){
         
             <StarBackground 
                 widthBackground={50} 
-                heightBackground={50} 
+                heightBackground={80} 
                 starCount={80} 
-                topOffset={220} 
-                className="rotate-270 left-320 rounded-b-none"
+                topOffset={100} 
             />
             
             <div  className="w-full px-6 md:px-0 flex flex-col justify-center items-center gap-0">
                 
-                <div  className="flex flex-row items-center gap-2 mb-12 md:mb-0">
+                <div  className="flex flex-row items-center gap-4 mb-12 md:mb-0">
                     <BriefcaseIcon size={25} className="text-subtext/80"></BriefcaseIcon>
                     <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
                         EXPERIENCIA
