@@ -4,25 +4,25 @@ export const projectsItems: Project[] = [
   {
     title: "BIG SORT",
     description:
-      "Herramienta interactiva para ver cómo funcionan los algoritmos de ordenamiento, en tiempo real y código en varios lenguajes de programación.",
+      "Herramienta para visualizar cómo funcionan los algoritmos de ordenamiento funcionan en tiempo real, con animaciones paso a paso.",
     img: "/bigsort.webp",
-    repository: "https://github.com/m4icol/bigsort",
+    repository: "https://github.com/maickolrivera/bigsort",
     link: "https://bigsort.vercel.app/"
   },
   {
     title: "REKRYPT",
     description:
-      "Explora cifrados clásicos y modernos, personaliza claves y visualiza el proceso de encriptación paso a paso.",
+      "Aplicación web que transforma texto encadenando múltiples métodos de hashing y codificación, donde la salida de cada uno es la entrada del siguiente.",
     img: "/rekrypt.webp",
-    repository: "https://github.com/m4icol/rekrypt",
+    repository: "https://github.com/maickolrivera/rekrypt",
     link: "https://rekrypt.vercel.app/"
   },
   {
     title: "SISTEMA SOLAR",
     description:
-      "Simulación 3D interactiva de los planetas orbitando alrededor del Sol, desarrollada con Three.js y Astro.",
+      "Simulacion interactiva del sistema solar con planetas que orbitan alrededor del Sol en trayectorias elípticas y giran sobre sus propios ejes",
     img: "/solarsystem.webp",
-    repository: "https://github.com/m4icol/sistema-solar",
+    repository: "https://github.com/maickolrivera/sistema-solar",
     link: "https://sistemasolar-threejs.vercel.app/"
   },
 ];

@@ -11,7 +11,7 @@ import { projectsItems } from "./ProjectsItems";
               <div className="
               flex flex-col gap-5 
               relative max-w-100 h-full overflow-hidden border rounded-xl px-2 py-2
-              md:max-w-180 md:h-80 md:px-6
+              md:max-w-180 md:h-75 md:px-6
 
               border-line bg-surface">
 
@@ -25,7 +25,7 @@ import { projectsItems } from "./ProjectsItems";
 
               <div className="
               flex flex-col gap-3
-              w-full h-full px-5 pb-5
+              w-full h-full px-4 pb-5
               md:max-w-[45%] md:justify-center md:pb-0 md:pt-2">
                 
                 <p className="text-lg font-semibold text-main">{title}</p>
