@@ -1,5 +1,0 @@
-export default function PythonIcon() {
-    return(
-        <svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.976 0C5.851 0 6.234 2.656 6.234 2.656l.007 2.752h5.844v.826H3.92S0 5.789 0 11.969c0 6.18 3.42 5.96 3.42 5.96h2.042v-2.867s-.11-3.42 3.366-3.42h5.797s3.257.052 3.257-3.148V3.202S18.377 0 11.976 0ZM8.753 1.85a1.05 1.05 0 1 1-.402 2.024 1.05 1.05 0 0 1 .402-2.024Z" fill="url(#a)"/><path d="M12.15 24c6.124 0 5.742-2.656 5.742-2.656l-.007-2.752H12.04v-.826h8.166s3.92.445 3.92-5.735c0-6.18-3.421-5.96-3.421-5.96h-2.042v2.867s.11 3.42-3.366 3.42H9.5s-3.257-.052-3.257 3.148v5.292S5.75 24 12.15 24Zm3.222-1.85a1.051 1.051 0 1 1-.001-2.102 1.051 1.051 0 0 1 .001 2.102Z" fill="url(#b)"/><defs><linearGradient id="a" x1="2.318" y1="2.159" x2="14.274" y2="13.995" gradientUnits="userSpaceOnUse"><stop stopColor="#387EB8"/><stop offset="1" stopColor="#366994"/></linearGradient><linearGradient id="b" x1="9.657" y1="9.759" x2="22.496" y2="21.897" gradientUnits="userSpaceOnUse"><stop stopColor="#FFE052"/><stop offset="1" stopColor="#FFC331"/></linearGradient></defs></svg>
-    )
-}

@@ -1,4 +1,4 @@
-import Line from "../assets/icons/Line";
+import { Line } from "../assets/icons/UIIcons";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
 

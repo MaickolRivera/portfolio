@@ -1,53 +1,40 @@
-import Html from "../../assets/icons/skills_icons/frontend/HtmlIcon";
-import JavaScript from "../../assets/icons/skills_icons/frontend/JavaScriptIcon";
-import Tailwind from "../../assets/icons/skills_icons/frontend/TailwindIcon";
-import TypeScript from "../../assets/icons/skills_icons/frontend/TypeScriptIcon";
-import Css from "../../assets/icons/skills_icons/frontend/CssIcon";
-import ReactJS from "../../assets/icons/skills_icons/frontend/ReactJSIcon";
-import ThreeJS from "../../assets/icons/skills_icons/frontend/ThreeJSIcon";
-import Astro from "../../assets/icons/skills_icons/frontend/AstroIcon";
-import PythonIcon from "../../assets/icons/skills_icons/backend/PythonIcon";
-import FastAPIIcon from "../../assets/icons/skills_icons/backend/FastAPIIcon";
-import MongoDBIcon from "../../assets/icons/skills_icons/backend/MongoDBIcon";
-import FigmaIcon from "../../assets/icons/skills_icons/other/FigmaIcon";
-import CloudinaryIcon from "../../assets/icons/skills_icons/other/CloudinaryIcon";
-import GitIcon from "../../assets/icons/skills_icons/other/GitIcon";
-import BashIcon from "../../assets/icons/skills_icons/other/BashIcon";
-import AzureIcon from "../../assets/icons/skills_icons/other/AzureIcon";
-import SQLIcon from "../../assets/icons/skills_icons/backend/SQLIcon";
-import PostgresIcon from "../../assets/icons/skills_icons/backend/PostgresIcon";
+import {
+    HtmlIcon, CssIcon, TailwindIcon, JavaScriptIcon, TypeScriptIcon, ReactIcon, AstroIcon, ThreeJSIcon,
+    PythonIcon, FastAPIIcon, SQLIcon, MongoDBIcon, PostgresIcon,
+    FigmaIcon, GitIcon, BashIcon, AzureIcon, CloudinaryIcon,
+} from "../../assets/icons/SkillIcons";
 
 export const FRONTEND = [
     {
-        icon: <Html></Html>,
+        icon: <HtmlIcon />,
         text: "HTML"
     },
     {
-        icon: <Css />,
+        icon: <CssIcon />,
         text: "CSS"
     },
     {
-        icon: <Tailwind />,
+        icon: <TailwindIcon />,
         text: "TAILWIND"
     },
     {
-        icon: <JavaScript />,
+        icon: <JavaScriptIcon />,
         text: "JAVASCRIPT"
     },
     {
-        icon: <TypeScript />,
+        icon: <TypeScriptIcon />,
         text: "TYPESCRIPT"
     },
     {
-        icon: <ReactJS />,
+        icon: <ReactIcon />,
         text: "REACT"
     },
     {
-        icon: <Astro />,
+        icon: <AstroIcon />,
         text: "ASTRO"
     },
     {
-        icon: <ThreeJS />,
+        icon: <ThreeJSIcon />,
         text: "THREE JS"
     },
 

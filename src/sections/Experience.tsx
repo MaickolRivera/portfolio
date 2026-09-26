@@ -1,4 +1,4 @@
-import { BriefcaseIcon } from "../assets/icons/nav_icons/NavIcons";
+import { BriefcaseIcon } from "../assets/icons/NavIcons";
 import RadialGradient from "../components/RadialGradient";
 import StarBackground from "../components/StarBackground";
 import ExperienceChart from "../components/ExperienceChart";

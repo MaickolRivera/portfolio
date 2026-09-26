@@ -1,4 +1,4 @@
-import ProjectsCode from "../assets/icons/section_icons/ProjectsIcon";
+import { ProjectsIcon } from "../assets/icons/UIIcons";
 import StarBackground from "../components/StarBackground";
 import ColumnList from "./sub_sections/ColumnList";
 
@@ -13,7 +13,7 @@ export default function Projects(){
         md:pt-40">
 
             <div className="flex flex-row items-center gap-4">
-                    <ProjectsCode className="text-subtext/80"/>
+                    <ProjectsIcon className="text-subtext/80"/>
                     <h2 className="text-2xl text-center mt-1 text-gradient font-semibold">
                         PROYECTOS
                     </h2>

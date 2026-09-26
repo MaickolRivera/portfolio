@@ -1,4 +1,4 @@
-import Arrow from "../assets/icons/Arrow";
+import { Arrow } from "../assets/icons/UIIcons";
 import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
 import Terminal from "../components/Terminal";

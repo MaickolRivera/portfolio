@@ -1,16 +1,14 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { navItems } from "./sub_sections/NavItems";
-import Moon from "../assets/icons/switch_icons/Moon";
-import Sun from "../assets/icons/switch_icons/Sun";
-import { HomeIcon, BriefcaseIcon, UserIcon, MailIcon } from "../assets/icons/nav_icons/NavIcons";
+import { HomeIcon, BriefcaseIcon, UserIcon, MailIcon } from "../assets/icons/NavIcons";
 import type { ThemeKey, LangKey } from "../types";
-import ProjectsCode from "../assets/icons/section_icons/ProjectsIcon";
+import { Moon, Sun, ProjectsIcon } from "../assets/icons/UIIcons";
 
 
 const navIcons: Record<string, ReactNode> = {
     "home": <HomeIcon size={15} />,
     "experience": <BriefcaseIcon size={15} />,
-    "projects": <ProjectsCode size={15} />,
+    "projects": <ProjectsIcon size={15} />,
     "about-me": <UserIcon size={15} />,
     "contact": <MailIcon size={15} />,
 };

@@ -1,6 +1,5 @@
 import RadialGradient from "../../components/RadialGradient";
-import GitHub from "../../assets/icons/GitHub";
-import Link from "../../assets/icons/Link";
+import { Github, Link } from "../../assets/icons/UIIcons";
 import { projectsItems } from "./ProjectsItems";
 
   export default function ColumnList() {
@@ -43,10 +42,10 @@ import { projectsItems } from "./ProjectsItems";
                   className="opacity-70 hover:opacity-100 flex flex-row items-center gap-3 border-1 rounded-lg py-2 px-3.5
                     bg-chip border-main/10">
                     
-                    <GitHub 
+                    <Github 
                       className="py-0.5 text-main" 
                       size={16}>
-                    </GitHub>
+                    </Github>
                   </a>
 
                   <a 

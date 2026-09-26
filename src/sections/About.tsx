@@ -1,4 +1,4 @@
-import { UserIcon } from "../assets/icons/nav_icons/NavIcons";
+import { UserIcon } from "../assets/icons/NavIcons";
 import StarBackground from "../components/StarBackground";
 import AboutGrid from "./sub_sections/AboutGrid";
 

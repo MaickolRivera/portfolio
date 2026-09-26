@@ -1,7 +1,4 @@
-import Arrow from "../assets/icons/Arrow";
-import Github from "../assets/icons/GitHub";
-import Link from "../assets/icons/Link";
-import Document from "../assets/icons/Document";
+import { Arrow, Github, Link, Document } from "../assets/icons/UIIcons";
 
 type Options = "github" | "link" | "arrow" | "document"
 
