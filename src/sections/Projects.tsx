@@ -1,4 +1,5 @@
 import { ProjectsIcon } from "../assets/icons/UIIcons";
+import BuildTerminal from "../components/BuildTerminal";
 import StarBackground from "../components/StarBackground";
 import ColumnList from "./sub_sections/ColumnList";
 
@@ -18,6 +19,8 @@ export default function Projects(){
                         PROYECTOS
                     </h2>
             </div>
+
+            <BuildTerminal></BuildTerminal>
 
             <ColumnList/>
             <StarBackground widthBackground={70} heightBackground={80} starCount={80} topOffset={220} />
