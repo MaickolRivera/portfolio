@@ -8,7 +8,7 @@ export default function AboutGrid(){
     return(
         <div className="
         grid grid-cols-2 gap-3 h-auto auto-rows-auto
-        relative w-full mt-12 max-w-100
+        relative w-full max-w-100
         md:max-w-210 md:px-0 md:grid-cols-4
         ">
     <MainBox 

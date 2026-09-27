@@ -7,7 +7,7 @@ export default function About(){
         <section 
         id="about-me"
         className="
-        flex items-center flex-col gap-3
+        flex items-center flex-col gap-12
         w-full px-5 relative my-60">
 
             <div className="flex flex-row items-center gap-4">
@@ -16,11 +16,6 @@ export default function About(){
                     SOBRE MI
                 </h2>
             </div>
-
-             <p className="max-w-[20rem] md:max-w-md text-sm text-gradient text-center opacity-80 md:text-base/5">
-                Comencé mi trayectoria con el Desarrollo de Software a los
-                17 años, acumulando experiencia en diversos proyectos
-            </p>
 
             <AboutGrid></AboutGrid>
 
