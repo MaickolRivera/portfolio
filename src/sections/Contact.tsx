@@ -7,18 +7,9 @@ export default function Contact(){
         <section 
         id="contact" 
         className="
-        flex flex-col justify-center items-center gap-8 
-        relative pb-95 pt-80 px-5 
-        md:pt-100">
+        flex flex-col justify-center items-center gap-8 h-150 pb-40
+        relative px-5">
             <StarBackground widthBackground={50} heightBackground={50} starCount={40} topOffset={0} />
-            
-            <div className="flex flex-row items-center gap-2 md:gap-5">
-                <Line classList="mb-0.5 w-10 md:w-auto"></Line>
-                <p className="text-xs text-gradient text-center">
-                    Desarrollado con ❤️ por Maickol Rivera
-                </p>
-                <Line classList="mb-0.5 w-10 md:w-auto rotate-180"></Line>
-            </div>
 
             <h2 className="md:w-[32rem] px-10 text-gradient text-4xl text-center font-semibold">
                 HABLAME DE TU PROXIMO PROYECTO

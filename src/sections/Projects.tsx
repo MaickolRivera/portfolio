@@ -7,11 +7,10 @@ export default function Projects(){
 
     return(
         <section 
-        id="projects"
+        
         className="
         flex items-center gap-10 flex-col 
-        px-5 w-full relative pt-25 my-60
-        md:pt-40">
+        px-5 w-full relative my-60">
 
             <div className="flex flex-row items-center gap-4">
                     <ProjectsIcon className="text-subtext/80"/>

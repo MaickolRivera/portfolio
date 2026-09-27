@@ -36,7 +36,7 @@ function App() {
             </Suspense>
           </div>
     
-          <div>
+          <div id="projects">
             <Suspense>
               <Projects />
             </Suspense>

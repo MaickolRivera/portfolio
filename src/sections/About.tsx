@@ -8,8 +8,7 @@ export default function About(){
         id="about-me"
         className="
         flex items-center flex-col gap-3
-        w-full px-5 relative pt-25 my-60
-        md:pt-30">
+        w-full px-5 relative my-60">
 
             <div className="flex flex-row items-center gap-4">
                 <UserIcon size={25} className="text-subtext/80"/>
