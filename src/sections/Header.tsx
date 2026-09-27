@@ -37,28 +37,19 @@ export default function Header(){
     };
 
     useEffect(()=> {
-        const handleScroll = () =>{
-            const sections = ['home', 'experience', 'projects', 'about-me', 'contact']
-            const scrollPosition = window.scrollY + window.innerHeight / 2;
+        // Marks the section crossing the middle of the viewport, without reading layout on every scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) setActiveSection(entry.target.id);
+            });
+        }, { rootMargin: "-50% 0px -50% 0px" });
 
-            for (const section of sections){
-                const element = document.getElementById(section);
-                if(element) {
-                    const offsetTop = element.offsetTop;
-                    const offsetBottom = offsetTop + element.offsetHeight;
+        navItems.forEach(({ id }) => {
+            const element = document.getElementById(id);
+            if (element) observer.observe(element);
+        });
 
-                    if(scrollPosition >= offsetTop && scrollPosition < offsetBottom){
-                        setActiveSection(section);
-                        break;
-                    }
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => observer.disconnect();
     }, []);
 
     const scrollToSection = (sectionId: string) => {

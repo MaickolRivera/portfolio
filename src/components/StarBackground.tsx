@@ -28,7 +28,10 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
   useEffect(() => {
     const generateStars = () => {
       const starArray: Star[] = [];
-      for (let i = 0; i < starCount; i++) {
+      // Fewer animated stars on phones: each one is an element animating forever
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+      const count = isMobile ? Math.round(starCount / 3) : starCount;
+      for (let i = 0; i < count; i++) {
         starArray.push({
           id: i,
           top: Math.random() * 100,

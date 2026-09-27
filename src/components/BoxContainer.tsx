@@ -40,7 +40,7 @@ export function MainBox({ className }: BoxContainerProps) {
       
       border-line bg-surface
     `}>
-      <img className="w-18 md:w-20 rounded-lg top-[28%] left-[44%]" src="/Maickol.webp" alt="Maickol Rivera" />
+      <img className="w-18 md:w-20 rounded-lg top-[28%] left-[44%]" src="/Maickol-192.webp" width={192} height={192} loading="lazy" decoding="async" alt="Maickol Rivera" />
       
       <div className="flex flex-col gap-1">
         <p className="md:text-2xl/7 text-gradient text-lg/6 font-semibold">MAICKOL STEVEN <br /> RIVERA OSPINA</p>

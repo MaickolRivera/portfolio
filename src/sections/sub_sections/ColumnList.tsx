@@ -6,7 +6,7 @@ import { projectsItems } from "./ProjectsItems";
     return (
       <div className="relative flex flex-col items-center gap-5">
         {
-          projectsItems.map(({ title, description, img, repository, link }) => (
+          projectsItems.map(({ title, description, img, srcSet, repository, link }) => (
               <div className="
               flex flex-col gap-5 
               relative max-w-100 h-full overflow-hidden border rounded-xl px-2 py-2
@@ -16,6 +16,12 @@ import { projectsItems } from "./ProjectsItems";
 
               <img
                 src={img}
+                srcSet={srcSet}
+                sizes="(min-width: 768px) 580px, 100vw"
+                width={1200}
+                height={631}
+                loading="lazy"
+                decoding="async"
                 alt={title}
                 className="
                 right-0 top-0 w-full rounded-lg

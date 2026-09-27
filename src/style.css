@@ -76,15 +76,6 @@ main [id] {
   50% { border-color: gray;}
 }
 
-@keyframes flicker {
-  0%, 100% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 .star {
   aspect-ratio: 1;
   background: var(--star-color);
@@ -123,6 +114,12 @@ main [id] {
   width: 20px;
   height: 20px;
   animation: bounce 1.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flicker, .arrow {
+    animation: none;
+  }
 }
 
 @keyframes bounce {
