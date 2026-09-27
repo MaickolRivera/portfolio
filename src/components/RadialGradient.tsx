@@ -13,7 +13,7 @@ export default function RadialGradient({
 }: RadialGradientProps) {
   return (
     <div
-      className={`absolute blur-4xl z-0 ${gradient}`}
+      className={`absolute blur-3xl z-0 ${gradient}`}
       style={{
         width: `${size}px`,
         height: `${size}px`,

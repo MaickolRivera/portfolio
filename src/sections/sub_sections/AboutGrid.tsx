@@ -7,10 +7,10 @@ import skillsJson from "./skills.json";
 export default function AboutGrid(){
     return(
         <div className="
-grid grid-cols-2 gap-3 h-auto auto-rows-auto
-relative px-2 w-full mt-12 max-w-[20rem] 
-md:max-w-220 md:px-0 md:grid-cols-4
-">
+        grid grid-cols-2 gap-3 h-auto auto-rows-auto
+        relative w-full mt-12 max-w-100
+        md:max-w-210 md:px-0 md:grid-cols-4
+        ">
     <MainBox 
     className="
     col-span-2
@@ -19,6 +19,22 @@ md:max-w-220 md:px-0 md:grid-cols-4
 
     <SmallBox 
     className="md:col-start-1 md:row-start-1"
+    title="+1">
+        <p className="w-30 text-center text-base/4.5 font-normal text-muted">
+            Año de Experiencia
+        </p>
+    </SmallBox>
+
+    <SmallBox 
+    className="md:col-start-4 md:row-start-1" 
+    title="B2">
+        <p className="font-normal text-muted">
+            Nivel de Ingles
+        </p>
+    </SmallBox>
+
+    <SmallBox 
+    className="md:col-start-1 md:row-start-2"
     title="+5">
         <p className="font-normal text-muted">
             Proyectos
@@ -26,26 +42,10 @@ md:max-w-220 md:px-0 md:grid-cols-4
     </SmallBox>
 
     <SmallBox 
-    className="md:col-start-1 md:row-start-2" 
-    title="B1">
-        <p className="font-normal text-muted">
-            Nivel de Ingles
-        </p>
-    </SmallBox>
-
-    <SmallBox 
-    className="md:col-start-4 md:row-start-1"
-    title="+9">
-        <p className="w-36 text-center text-base/4.5 font-normal text-muted">
-            Meses de Experiencia
-        </p>
-    </SmallBox>
-
-    <SmallBox 
     className="md:col-start-4 md:row-start-2"
-    title="+2">
+    title="+7">
         <p className="w-36 text-center text-base/4.5 font-normal text-muted">    
-            Años Desarrollando
+            Certificaciones
         </p>
     </SmallBox>
 
@@ -57,9 +57,9 @@ md:max-w-220 md:px-0 md:grid-cols-4
 
     <div className="
     absolute pointer-events-none
-    right-0 top-[10%] md:top-[0%] md:right-[70%] ">
+    right-0 top-[10%] md:top-[15%] md:right-[77%] ">
         <RadialGradient
-            size="400"
+            size="500"
             gradient="gradient-radial-project"
         />
     </div>
