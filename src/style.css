@@ -32,11 +32,11 @@ main [id] {
     --subtext: #777;
     --muted: #777;
     --selected: #ccc;
-    --surface: rgb(204 204 204 / 0.2);
+    --surface: rgba(249, 249, 249, 0.2);
     --chip: rgb(204 204 204 / 0.6);
     --line: rgb(119 119 119 / 0.2);
     --edge: rgb(34 34 34 / 0.1);
-    --glass: rgb(233 233 233 / 0.7);
+    --glass: rgba(246, 244, 244, 0.852);
     --active: rgb(204 204 204 / 0.7);
 }
 
