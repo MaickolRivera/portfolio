@@ -86,3 +86,8 @@ export const OTHER_SKILLS = [
         text: "CLOUDINARY"
     },
 ]
+
+export const SKILL_ICONS: Record<string, React.ReactNode> = {
+    ...Object.fromEntries([...FRONTEND, ...BACKEND, ...OTHER_SKILLS].map(({ text, icon }) => [text, icon])),
+    "REACT THREE FIBER": <ThreeJSIcon />,
+}

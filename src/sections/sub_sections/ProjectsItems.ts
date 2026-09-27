@@ -8,7 +8,8 @@ export const projectsItems: Project[] = [
     img: "/bigsort-1200.webp",
     srcSet: "/bigsort-640.webp 640w, /bigsort-1200.webp 1200w",
     repository: "https://github.com/maickolrivera/bigsort",
-    link: "https://bigsort.vercel.app/"
+    link: "https://bigsort.vercel.app/",
+    stack: ["REACT", "TYPESCRIPT", "TAILWIND", "RADIX"]
   },
   {
     title: "REKRYPT",
@@ -17,7 +18,8 @@ export const projectsItems: Project[] = [
     img: "/rekrypt-1200.webp",
     srcSet: "/rekrypt-640.webp 640w, /rekrypt-1200.webp 1200w",
     repository: "https://github.com/maickolrivera/rekrypt",
-    link: "https://rekrypt.vercel.app/"
+    link: "https://rekrypt.vercel.app/",
+    stack: ["REACT", "TYPESCRIPT", "REACT THREE FIBER", "TAILWIND", "PYTHON", "FASTAPI"]
   },
   {
     title: "SISTEMA SOLAR",
@@ -25,6 +27,7 @@ export const projectsItems: Project[] = [
       "Simulacion interactiva del sistema solar con planetas que orbitan alrededor del Sol en trayectorias elípticas y giran sobre sus propios ejes",
     img: "/solarsystem.webp",
     repository: "https://github.com/maickolrivera/sistema-solar",
-    link: "https://sistemasolar-threejs.vercel.app/"
+    link: "https://sistemasolar-threejs.vercel.app/",
+    stack: ["ASTRO", "THREE JS", "JAVASCRIPT"]
   },
 ];

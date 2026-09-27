@@ -6,6 +6,7 @@ export type Project = {
     srcSet?: string;
     repository: string;
     link: string;
+    stack: string[];
   };
 
 export type ThemeKey = "light" | "dark";
