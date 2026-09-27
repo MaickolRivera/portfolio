@@ -7,10 +7,11 @@ export default function Projects(){
 
     return(
         <section 
-        
+        id="projects"
         className="
-        flex items-center gap-10 flex-col 
-        px-5 w-full relative my-60">
+        flex items-center gap-10 flex-col px-5 w-full relative my-60">
+
+            <StarBackground widthBackground={50} heightBackground={80} starCount={80} topOffset={10}/>
 
             <div className="flex flex-row items-center gap-4">
                     <ProjectsIcon className="text-subtext/80"/>
@@ -22,8 +23,6 @@ export default function Projects(){
             <BuildTerminal></BuildTerminal>
 
             <ColumnList/>
-            <StarBackground widthBackground={70} heightBackground={80} starCount={80} topOffset={220} />
-
         </section>
     )
 }

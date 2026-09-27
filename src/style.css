@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main [id] {
+    scroll-margin-top: 6rem;
+}
+
 @theme inline {
     --color-background: var(--background);
     --color-main: var(--main);
