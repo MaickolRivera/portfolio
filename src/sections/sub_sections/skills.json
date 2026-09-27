@@ -1,6 +1,20 @@
 {
-  "automatizacion_datos": ["Python", "Pandas", "NumPy", "Pydantic", "SQL", "PostgreSQL", "Supabase", "MongoDB", "APIs REST/SOAP", "ETL/ELT", "Playwright", "Apps Script"],
-  "desarrollo_software": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "FastAPI", "Git", "Vercel", "Figma", "Microsoft Azure"],
-  "analisis_reporteria": ["Excel", "Google Sheets", "Looker Studio", "Power BI", "Dashboards"],
-  "inteligencia_artificial": ["Arquitectura RAG", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "Integración de LLMs", "MCP"]
+  "FRONTEND": [
+    "HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "Radix UI"
+  ],
+  "BACKEND": [
+    "Python", "FastAPI", "Pydantic", "SQL", "PostgreSQL", "MongoDB"
+  ],
+  "AUTOMATIZACION": [
+    "Pandas", "NumPy", "ETL/ELT", "Playwright", "Apps Script"
+  ],
+  "INTELIGENCIA_ARTIFICIAL": [
+    "Arquitectura RAG", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "Integración de LLMs", "MCP"
+  ],
+  "ANALISIS_DATOS": [
+    "Jupyter Notebook", "Excel", "Google Sheets", "Looker Studio", "Power BI"
+  ],
+  "HERRAMIENTAS": [
+    "Vercel", "Figma", "Supabase", "Git", "Microsoft Azure"
+  ]
 }
