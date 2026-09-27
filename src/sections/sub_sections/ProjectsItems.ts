@@ -9,7 +9,7 @@ export const projectsItems: Project[] = [
     srcSet: "/bigsort-640.webp 640w, /bigsort-1200.webp 1200w",
     repository: "https://github.com/maickolrivera/bigsort",
     link: "https://bigsort.vercel.app/",
-    stack: ["REACT", "TYPESCRIPT", "TAILWIND", "RADIX"]
+    stack: ["REACT", "TYPESCRIPT", "TAILWIND", "RADIX UI"]
   },
   {
     title: "REKRYPT",

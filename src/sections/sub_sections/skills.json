@@ -1,0 +1,6 @@
+{
+  "automatizacion_datos": ["Python", "Pandas", "NumPy", "Pydantic", "SQL", "PostgreSQL", "Supabase", "MongoDB", "APIs REST/SOAP", "ETL/ELT", "Playwright", "Apps Script"],
+  "desarrollo_software": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "FastAPI", "Git", "Vercel", "Figma", "Microsoft Azure"],
+  "analisis_reporteria": ["Excel", "Google Sheets", "Looker Studio", "Power BI", "Dashboards"],
+  "inteligencia_artificial": ["Arquitectura RAG", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "Integración de LLMs", "MCP"]
+}

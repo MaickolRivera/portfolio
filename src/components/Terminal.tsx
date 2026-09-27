@@ -6,11 +6,12 @@ type TerminalLine = {
 type TerminalProps = {
   user?: string;
   command?: string;
-  lines: TerminalLine[];
+  lines?: TerminalLine[];
+  children?: React.ReactNode;
   className?: string;
 };
 
-export default function Terminal({ user = "maickol@portfolio", command = "neofetch", lines, className = "" }: TerminalProps) {
+export default function Terminal({ user = "maickol@portfolio", command = "neofetch", lines = [], children, className = "" }: TerminalProps) {
   return (
     <div className={`${className}
       w-auto overflow-hidden border rounded-xl font-mono text-xs md:text-sm
@@ -34,6 +35,8 @@ export default function Terminal({ user = "maickol@portfolio", command = "neofet
             {line.value}
           </p>
         ))}
+
+        {children}
       </div>
     </div>
   );
