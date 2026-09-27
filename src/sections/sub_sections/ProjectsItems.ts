@@ -5,8 +5,7 @@ export const projectsItems: Project[] = [
     title: "BIG SORT",
     description:
       "Herramienta para visualizar cómo funcionan los algoritmos de ordenamiento funcionan en tiempo real, con animaciones paso a paso.",
-    img: "/bigsort-1200.webp",
-    srcSet: "/bigsort-640.webp 640w, /bigsort-1200.webp 1200w",
+    img: "/bigsort.webp",
     repository: "https://github.com/maickolrivera/bigsort",
     link: "https://bigsort.vercel.app/",
     stack: ["REACT", "TYPESCRIPT", "TAILWIND", "RADIX UI"]
@@ -15,8 +14,7 @@ export const projectsItems: Project[] = [
     title: "REKRYPT",
     description:
       "Aplicación web que transforma texto encadenando múltiples métodos de hashing y codificación, donde la salida de cada uno es la entrada del siguiente.",
-    img: "/rekrypt-1200.webp",
-    srcSet: "/rekrypt-640.webp 640w, /rekrypt-1200.webp 1200w",
+    img: "/rekrypt.webp",
     repository: "https://github.com/maickolrivera/rekrypt",
     link: "https://rekrypt.vercel.app/",
     stack: ["REACT", "TYPESCRIPT", "REACT THREE FIBER", "TAILWIND", "PYTHON", "FASTAPI"]

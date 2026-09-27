@@ -16,7 +16,7 @@ import type { Project } from "../../types";
     );
   }
 
-  function ProjectCard({ title, description, img, srcSet, repository, link, stack }: Project) {
+  function ProjectCard({ title, description, img, repository, link, stack }: Project) {
     const [showStack, setShowStack] = useState(false);
     const stackId = `stack-${title.replace(/\s+/g, "-").toLowerCase()}`;
 
@@ -30,8 +30,6 @@ import type { Project } from "../../types";
 
           <img
             src={img}
-            srcSet={srcSet}
-            sizes="(min-width: 768px) 580px, 100vw"
             width={1200}
             height={631}
             loading="lazy"

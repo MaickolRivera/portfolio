@@ -36,15 +36,16 @@ export function MainBox({ className }: BoxContainerProps) {
   return (
     <div className={`${className}
       flex flex-row justify-center items-center gap-5 h-40 md:h-full  py-8
-      overflow-hidden border-1 rounded-xl
-      
+      border rounded-xl
       border-line bg-surface
     `}>
-      <img className="w-18 md:w-20 rounded-lg top-[28%] left-[44%]" src="/Maickol-192.webp" width={192} height={192} loading="lazy" decoding="async" alt="Maickol Rivera" />
-      
+      <div className="overflow-hidden w-22 rounded-lg">
+        <img className="h-full w-full object-cover scale-125 translate-y-2.5" src="/Maickol.webp" width={320} height={320} loading="lazy" decoding="async" alt="Maickol Rivera" />
+      </div>
+
       <div className="flex flex-col gap-1">
-        <p className="md:text-2xl/7 text-gradient text-lg/6 font-semibold">MAICKOL STEVEN <br /> RIVERA OSPINA</p>
-        <p className="text-xs md:text-sm text-muted">Desarrollador de Software</p>
+        <p className="md:text-2xl/7 text-lg/6 font-semibold">MAICKOL STEVEN <br /> RIVERA OSPINA</p>
+        <p className="text-xs md:text-sm text-gradient">msrivera.msro@gmail.com</p>
       </div>
     </div>
   );
