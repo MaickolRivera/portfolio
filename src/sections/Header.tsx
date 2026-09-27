@@ -62,7 +62,7 @@ export default function Header(){
     return(
         <header className="
         w-screen flex justify-center items-center
-        fixed top-0 left-0 z-50 py-2 pointer-events-none">
+        fixed top-0 left-0 z-100 py-2 pointer-events-none">
 
             <div
                 aria-hidden="true"

@@ -88,7 +88,7 @@ import type { Project } from "../../types";
                 onClick={() => setShowStack(!showStack)}
                 aria-expanded={showStack}
                 aria-controls={stackId}
-                className="z-100
+                className="z-50
                   flex flex-row items-center gap-3 cursor-pointer
                   border rounded-lg py-2 px-3.5
                   bg-chip border-main/10
