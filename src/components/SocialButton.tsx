@@ -5,7 +5,6 @@ type Options = "github" | "link" | "arrow" | "document"
 type SocialButtonProps = {
   text: string;
   href?: string;
-  download?: boolean | string;
   target?: string;
   Options?: Options;
   label?: string;
@@ -15,7 +14,6 @@ type SocialButtonProps = {
 export default function SocialButton({
   text = "",
   href = "#",
-  download,
   target = "",
   Options = "arrow",
   label = "[read more...]",
@@ -36,7 +34,6 @@ export default function SocialButton({
       target={target}
       rel="noopener noreferrer"
       aria-label={label}
-      {...(download ? { download } : {})}
     >
       
         {
