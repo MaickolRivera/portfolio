@@ -63,7 +63,7 @@ export default function Home(){
                         </p>
                     </div>
 
-                    <SocialButton Options="document" text={"Descargar CV"} href="/CV_MAICKOL_RIVERA.pdf" download/>
+                    <SocialButton Options="document" text={"Descargar CV"} target="_blank" href="https://maickolrivera.vercel.app/CV_MAICKOL_RIVERA.pdf" download/>
                 </div>
 
                 <Terminal
