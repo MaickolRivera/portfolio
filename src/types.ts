@@ -8,4 +8,3 @@ export type Project = {
   };
 
 export type ThemeKey = "light" | "dark";
-export type LangKey = "es" | "en";

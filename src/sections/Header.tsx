@@ -1,8 +1,9 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { navItems } from "./sub_sections/NavItems";
 import { HomeIcon, BriefcaseIcon, UserIcon, MailIcon } from "../assets/icons/NavIcons";
-import type { ThemeKey, LangKey } from "../types";
+import type { ThemeKey } from "../types";
 import { Moon, Sun, ProjectsIcon } from "../assets/icons/UIIcons";
+import { useTranslation } from "react-i18next";
 
 
 const navIcons: Record<string, ReactNode> = {
@@ -17,13 +18,14 @@ export default function Header(){
 
     const [activeSection, setActiveSection] = useState('home');
     const [theme, setTheme] = useState<ThemeKey>("dark");
-    const [lang, setLang] = useState<LangKey>("es");
 
     useEffect(() => {
         const storageTheme = (localStorage.getItem("theme") || "dark") as ThemeKey;
         setTheme(storageTheme);
         document.documentElement.classList.toggle("dark", storageTheme === "dark");
     }, []);
+
+    const { i18n } = useTranslation();
 
     const toggleTheme = () => {
         const newTheme: ThemeKey = theme === "dark" ? "light" : "dark";
@@ -32,8 +34,8 @@ export default function Header(){
         localStorage.setItem("theme", newTheme);
     };
 
-    const toggleLang = () => {
-        setLang(lang === "es" ? "en" : "es");
+    const toggleLanguage = () => {
+        i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
     };
 
     useEffect(()=> {
@@ -122,14 +124,14 @@ export default function Header(){
                 </button>
 
                 <button
-                    onClick={toggleLang}
+                    onClick={toggleLanguage}
                     className="flex items-center pl-1 pr-3 rounded-full cursor-pointer transition-colors duration-200
                     text-xs font-semibold uppercase
                     text-muted hover:text-main"
                     aria-label="Cambiar idioma"
                     title="Change Language"
                 >
-                    {lang}
+                    {i18n.language.toUpperCase()}
                 </button>
             </nav>
         </header>

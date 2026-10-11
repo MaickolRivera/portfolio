@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './style.css'
 import './gradients.css'
 import App from './App.tsx'
+import "./i18n.ts"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -3,8 +3,11 @@ import SocialButton from "../components/SocialButton";
 import StarBackground from "../components/StarBackground";
 import Terminal from "../components/Terminal";
 import { navItems } from "./sub_sections/NavItems";
+import { useTranslation } from "react-i18next";
 
 export default function Home(){
+    
+    const { t } = useTranslation();
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
@@ -41,7 +44,7 @@ export default function Home(){
                             <span className="absolute inline-flex size-full rounded-full bg-green-300 opacity-75 animate-ping" />
                             <span className="relative inline-flex size-2 rounded-full bg-green-300" />
                         </span>
-                        <p className="pr-2 py-0.5 mt-0.5">Disponible para trabajar</p>
+                        <p className="pr-2 py-0.5 mt-0.5">{t("hero.badge")}</p>
                     </div>
 
                     <div className="flex flex-col items-start">
