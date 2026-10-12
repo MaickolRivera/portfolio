@@ -30,7 +30,7 @@ export default function Terminal({ user = "maickol@portfolio", command = "neofet
         </p>
 
         {lines.map((line) => (
-          <p key={line.label} className="text-soft">
+          <p key={line.label} className="text-soft pr-6">
             <span className="text-muted">{line.label}: </span>
             {line.value}
           </p>

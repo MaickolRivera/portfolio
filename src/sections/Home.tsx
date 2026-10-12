@@ -57,25 +57,25 @@ export default function Home(){
                         <h2 className="
                         typewriter mx-0! font-semibold text-2xl
                         md:text-3xl/11">
-                            Desarrollador Web ‎ 
+                            {t("hero.role")} ‎
                         </h2>
 
                         <p className="
                         mt-4 text-subtext text-sm max-w-[20rem] md:max-w-100">
-                            Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios — mejorados con experiencia real en datos e IA
+                            {t("hero.description")}
                         </p>
                     </div>
 
-                    <SocialButton Options="document" text={"Descargar CV"} target="_blank" href="https://maickolrivera.vercel.app/CV_MAICKOL_RIVERA.pdf"/>
+                    <SocialButton Options="document" text={t("hero.cv")} label={t("hero.cvLabel")} target="_blank" href="https://maickolrivera.vercel.app/CV_MAICKOL_RIVERA.pdf"/>
                 </div>
 
                 <Terminal
                     className="md:max-w-lg mt-5 md:mt-0"
                     lines={[
-                        { label: "Correo", value: "msrivera.msro@gmail.com" },
-                        { label: "Ubicación", value: "Bogotá D.C. - Colombia" },
-                        { label: "Estudiando", value: "Ingeniería de Software" },
-                        { label: "Experiencia", value: "Data e Inteligencia Artificial (RAG, LLM)" },
+                        { label: t("hero.terminal.email"), value: "msrivera.msro@gmail.com" },
+                        { label: t("hero.terminal.location"), value: "Bogotá D.C. - Colombia" },
+                        { label: t("hero.terminal.studying"), value: t("hero.terminal.studyingValue") },
+                        { label: t("hero.terminal.experience"), value: t("hero.terminal.experienceValue") },
                     ]}
                 />
             </div>

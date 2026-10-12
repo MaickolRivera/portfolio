@@ -24,11 +24,10 @@
     "terminal": {
       "email": "Correo",
       "location": "Ubicación",
-      "locationValue": "Bogotá D.C. - Colombia",
       "studying": "Estudiando",
       "studyingValue": "Ingeniería de Software",
       "experience": "Experiencia",
-      "experienceValue": "Data e Inteligencia Artificial (RAG, LLM)"
+      "experienceValue": "Data e Inteligencia Artificial"
     }
   },
   "experience": {

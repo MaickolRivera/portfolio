@@ -25,7 +25,7 @@ export default function Header(){
         document.documentElement.classList.toggle("dark", storageTheme === "dark");
     }, []);
 
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     const toggleTheme = () => {
         const newTheme: ThemeKey = theme === "dark" ? "light" : "dark";
@@ -95,13 +95,13 @@ export default function Header(){
                                             ? 'bg-active text-main'
                                             : 'text-muted hover:text-main'
                                         }`}
-                                        aria-label={item.label}
-                                        title={item.title}
+                                        aria-label={t(`nav.${item.id}.label`)}
+                                        title={t(`nav.${item.id}.title`)}
                                     >
                                         {navIcons[item.id]}
                                         {!isHome && (
                                             <span className="hidden md:inline pt-0.5 pr-1">
-                                                {item.title}
+                                                {t(`nav.${item.id}.title`)}
                                             </span>
                                         )}
                                     </button>
@@ -117,8 +117,8 @@ export default function Header(){
                     onClick={toggleTheme}
                     className="p-2 rounded-full cursor-pointer transition-colors duration-200
                     text-muted hover:text-main"
-                    aria-label={theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
-                    title={theme === "dark" ? "Modo claro" : "Modo oscuro"}
+                    aria-label={theme === "dark" ? t("header.themeToLight") : t("header.themeToDark")}
+                    title={theme === "dark" ? t("header.themeLight") : t("header.themeDark")}
                 >
                     {theme === "dark" ? <Sun size={15} /> : <Moon size={14} />}
                 </button>
@@ -128,8 +128,8 @@ export default function Header(){
                     className="flex items-center pl-1 pr-3 rounded-full cursor-pointer transition-colors duration-200
                     text-xs font-semibold uppercase
                     text-muted hover:text-main"
-                    aria-label="Cambiar idioma"
-                    title="Change Language"
+                    aria-label={t("header.language")}
+                    title={t("header.languageTitle")}
                 >
                     {i18n.language.toUpperCase()}
                 </button>
