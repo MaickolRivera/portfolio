@@ -1,6 +1,5 @@
 export type Project = {
-    title: string;
-    description: string;
+    slug: string;
     img: string;
     repository: string;
     link: string;

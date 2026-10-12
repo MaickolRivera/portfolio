@@ -1,11 +1,13 @@
 "use client"
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 
-const steps = ["planeacion", "diseño", "desarrollo", "testing", "despliegue", "optimización"]
 const totalBlocks = 35
 const stepDuration = 2000
 
 export default function BuildTerminal() {
+  const { t } = useTranslation()
+  const steps = t("projects.buildSteps", { returnObjects: true }) as string[]
   const [stepIndex, setStepIndex] = useState(0)
 
   useEffect(() => {

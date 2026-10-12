@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import RadialGradient from "../../components/RadialGradient";
 import SkillsPill from "../../components/SkillsPill";
 import { Arrow, Github, Link } from "../../assets/icons/UIIcons";
@@ -10,15 +11,18 @@ import type { Project } from "../../types";
     return (
       <div className="relative flex flex-col items-center gap-5">
         {projectsItems.map((project) => (
-          <ProjectCard key={project.title} {...project} />
+          <ProjectCard key={project.slug} {...project} />
         ))}
       </div>
     );
   }
 
-  function ProjectCard({ title, description, img, repository, link, stack }: Project) {
+  function ProjectCard({ slug, img, repository, link, stack }: Project) {
+    const { t } = useTranslation();
     const [showStack, setShowStack] = useState(false);
-    const stackId = `stack-${title.replace(/\s+/g, "-").toLowerCase()}`;
+    const stackId = `stack-${slug}`;
+    const title = t(`projects.items.${slug}.title`);
+    const description = t(`projects.items.${slug}.description`);
 
     return (
       <div className="flex flex-col w-full max-w-100 md:max-w-180">
@@ -54,7 +58,7 @@ import type { Project } from "../../types";
 
               <a
               href={repository}
-              aria-label="Look at the repository project"
+              aria-label={t("projects.repositoryLabel")}
               target="_blank"
               className="
               flex flex-row items-center gap-3 border rounded-lg py-2 px-3.5
@@ -68,7 +72,7 @@ import type { Project } from "../../types";
 
               <a
               href={link}
-              aria-label="Look at the project"
+              aria-label={t("projects.linkLabel")}
               target="_blank"
               className="
                 flex flex-row items-center gap-3
@@ -78,7 +82,7 @@ import type { Project } from "../../types";
                 hover:opacity-100
               ">
                 <Link className="text-main" size={15}></Link>
-                <p className="text-sm text-soft">Visitar</p>
+                <p className="text-sm text-soft">{t("projects.visit")}</p>
               </a>
 
               <button
@@ -92,7 +96,7 @@ import type { Project } from "../../types";
                   bg-chip border-main/10
                   opacity-70 hover:opacity-100">
 
-                  <p className="text-sm text-soft">Stack</p>
+                  <p className="text-sm text-soft">{t("projects.stack")}</p>
                   <Arrow
                     size="10"
                     className={`text-main transition-transform duration-300 ${showStack ? 'rotate-180' : ''}`}

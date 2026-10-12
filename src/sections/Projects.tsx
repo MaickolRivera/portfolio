@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { ProjectsIcon } from "../assets/icons/UIIcons";
 import BuildTerminal from "../components/BuildTerminal";
 import StarBackground from "../components/StarBackground";
 import ColumnList from "./sub_sections/ColumnList";
 
 export default function Projects(){
+
+    const { t } = useTranslation();
 
     return(
         <section 
@@ -16,7 +19,7 @@ export default function Projects(){
             <div className="flex flex-row items-center gap-4">
                     <ProjectsIcon className="text-subtext/80"/>
                     <h2 className="text-2xl text-center mt-1 text-gradient font-semibold">
-                        PROYECTOS
+                        {t("projects.title")}
                     </h2>
             </div>
 
