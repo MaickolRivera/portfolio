@@ -86,12 +86,12 @@
         ]
       }
     ],
-    "timeline": [
-      "Fullstack Jr · Freelance",
-      "Data Analyst · Open English",
-      "Data Analyst · EXPERTA",
-      "Project Planner · Promise"
-    ]
+    "timeline": {
+      "freelance": "Fullstack Jr [Freelance]",
+      "openEnglish": "Data Analyst [Open English]",
+      "experta": "Data Analyst [EXPERTA]",
+      "promise": "Project Planner [Promise Gestión]"
+    }
   },
   "projects": {
     "title": "PROJECTS",
@@ -99,7 +99,14 @@
     "stack": "Stack",
     "repositoryLabel": "View the project repository",
     "linkLabel": "View the project",
-    "buildSteps": ["planning", "design", "development", "testing", "deployment", "optimization"],
+    "buildSteps": [
+      "planning",
+      "design",
+      "development",
+      "testing",
+      "deployment",
+      "optimization"
+    ],
     "items": {
       "bigsort": {
         "title": "BIG SORT",

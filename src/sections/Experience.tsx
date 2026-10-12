@@ -2,9 +2,19 @@ import { BriefcaseIcon } from "../assets/icons/NavIcons";
 import RadialGradient from "../components/RadialGradient";
 import StarBackground from "../components/StarBackground";
 import ExperienceChart from "../components/ExperienceChart";
-import { experienceItems, timelineItems } from "./sub_sections/ExperienceItems";
+import { timelineItems, type ExperienceItem } from "./sub_sections/ExperienceItems";
+import { useTranslation } from "react-i18next";
 
 export default function Experience(){
+
+    const { t } = useTranslation();
+
+    const experienceItems = t("experience.items", { returnObjects: true }) as ExperienceItem[];
+    const chartItems = timelineItems.map(({ key, ...dates }) => ({
+        ...dates,
+        label: t(`experience.timeline.${key}`),
+    }));
+
     return(
         <section 
         id="experience" 
@@ -24,11 +34,11 @@ export default function Experience(){
                 <div  className="flex flex-row items-center gap-4 mb-12 md:mb-0">
                     <BriefcaseIcon size={25} className="text-subtext/80"></BriefcaseIcon>
                     <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
-                        EXPERIENCIA
+                        {t("experience.title")}
                     </h2>
                 </div>
 
-                <ExperienceChart items={timelineItems} className="max-w-180" />
+                <ExperienceChart items={chartItems} className="max-w-180" />
 
                 <ol className="flex flex-col w-full max-w-210">
                     {
@@ -50,7 +60,7 @@ export default function Experience(){
                                         />
                                         {!isLast && (
                                             <span className={`absolute top-4.5 bottom-0 w-px
-                                                ${isCurrent ? 'bg-main' : 'bg-edge'}`}
+                                                ${isCurrent ? 'bg-main/50' : 'bg-edge'}`}
                                             />
                                         )}
                                     </div>
