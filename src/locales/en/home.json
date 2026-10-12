@@ -1,5 +1,139 @@
 {
+  "nav": {
+    "home": { "title": "Home", "label": "Go to home" },
+    "experience": { "title": "Experience", "label": "Go to experience" },
+    "projects": { "title": "Projects", "label": "Go to projects" },
+    "about-me": { "title": "About me", "label": "Go to about me" },
+    "contact": { "title": "Contact", "label": "Go to contact" }
+  },
+  "header": {
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode",
+    "themeLight": "Light mode",
+    "themeDark": "Dark mode",
+    "language": "Change language",
+    "languageTitle": "Switch to Spanish"
+  },
   "hero": {
-    "badge": "Available to work"
+    "badge": "Available to work",
+    "role": "Web Developer",
+    "description": "I build high-performance web applications with modern frameworks and clean backend systems — enhanced by real-world experience in data and AI",
+    "cv": "Download CV",
+    "cvLabel": "Open my resume in a new tab",
+    "scrollDown": "Go to the next section",
+    "terminal": {
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Bogotá D.C. - Colombia",
+      "studying": "Studying",
+      "studyingValue": "Software Engineering",
+      "experience": "Experience",
+      "experienceValue": "Data & Artificial Intelligence (RAG, LLM)"
+    }
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "items": [
+      {
+        "start": "PRESENT",
+        "end": "",
+        "role": "Junior Fullstack Developer",
+        "company": "Freelance",
+        "description": [
+          "Web product design: Structure, interface and visual decisions driven by the product's goal, prioritizing clarity and ease of use.",
+          "Frontend development: Responsive, accessible and maintainable interfaces with React, TypeScript and Tailwind, built for production.",
+          "Backend development: REST APIs with FastAPI, database modeling and management (PostgreSQL, Supabase, MongoDB) and user authentication.",
+          "Delivery and launch: Technical preparation, deployment (Vercel, Render/Railway) and support until the product is live in production.",
+          "Data analysis: Data cleaning, processing and automation (Python, ETL), with dashboards and reports that support decision-making.",
+          "AI integrations: RAG-based agents and assistants (ChromaDB, Qdrant, LlamaIndex, LLMs), connected to your work tools."
+        ]
+      },
+      {
+        "start": "Mar 2026",
+        "end": "Sep 2026",
+        "role": "Data Analyst",
+        "company": "Open English (Internship)",
+        "description": [
+          "Developed an AI agent based on a RAG architecture (LlamaIndex, ChromaDB/Qdrant, Groq LLM) for training and onboarding new team members, with a FastAPI backend and Slack integration for direct queries from the team channel.",
+          "Designed and maintained Python ETL pipelines that extract data from FTP, APIs and Google Sheets, then transform and consolidate it automatically, eliminating manual data entry.",
+          "Built dynamic Looker Studio dashboards to visualize KPIs and operational metrics, including campaign analytics and marketing funnels, to support decision-making.",
+          "Implemented web scraping with Playwright to automate data extraction from various web sources and feed the analysis and reporting processes.",
+          "Analyzed WhatsApp campaign data (failure rate and lead volume trends) using Python (pandas, numpy), Excel and Google Sheets."
+        ]
+      },
+      {
+        "start": "Oct 2025",
+        "end": "Dec 2025",
+        "role": "Project Planner & Data Analyst",
+        "company": "EXPERTA Project (Unión Temporal Fessanjose y Triángulo)",
+        "description": [
+          "Automated workflows with Python, reducing repetitive manual tasks.",
+          "Cleaned and refined the characterization databases through ETL processes, removing duplicates and failed records to keep only valid candidates for analysis and follow-up.",
+          "Designed Power BI dashboards and, together with the team, presented the results to evaluate campaign performance and adjust decisions.",
+          "Managed research for the planning and execution of the project, and implemented indicator monitoring and mitigation strategies.",
+          "Analyzed data in Python, Excel and Google Sheets to identify progress, gaps and needs of the population served."
+        ]
+      },
+      {
+        "start": "Mar 2025",
+        "end": "Sep 2025",
+        "role": "Project Planner",
+        "company": "Promise Gestión y Soluciones S.A.S",
+        "description": [
+          "Entered and managed data in systems such as BIZAGI and SUIFP SGR.",
+          "Contributed to building the structure and components of projects: objectives, activities, budget, schedule and required resources.",
+          "Configured and structured public investment projects in MGA-Web, aligned with the DNP's General Adjusted Methodology.",
+          "Formulated, structured and monitored investment projects with various funding sources."
+        ]
+      }
+    ],
+    "timeline": [
+      "Fullstack Jr · Freelance",
+      "Data Analyst · Open English",
+      "Data Analyst · EXPERTA",
+      "Project Planner · Promise"
+    ]
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "visit": "Visit",
+    "stack": "Stack",
+    "repositoryLabel": "View the project repository",
+    "linkLabel": "View the project",
+    "buildSteps": ["planning", "design", "development", "testing", "deployment", "optimization"],
+    "items": {
+      "bigsort": {
+        "title": "BIG SORT",
+        "description": "A tool to visualize how sorting algorithms work in real time, with step-by-step animations."
+      },
+      "rekrypt": {
+        "title": "REKRYPT",
+        "description": "A web app that transforms text by chaining multiple hashing and encoding methods, where each one's output becomes the next one's input."
+      },
+      "solarsystem": {
+        "title": "SOLAR SYSTEM",
+        "description": "An interactive solar system simulation with planets orbiting the Sun along elliptical paths and spinning on their own axes."
+      }
+    }
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "yearsExperience": "Year of experience",
+    "englishLevel": "English level",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "skills": {
+      "FRONTEND": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "Radix UI"],
+      "BACKEND": ["Python", "FastAPI", "Pydantic", "SQL", "PostgreSQL", "MongoDB"],
+      "AUTOMATION": ["Pandas", "NumPy", "ETL/ELT", "Playwright", "Apps Script"],
+      "ARTIFICIAL_INTELLIGENCE": ["RAG Architecture", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "LLM Integration", "MCP"],
+      "DATA_ANALYSIS": ["Jupyter Notebook", "Excel", "Google Sheets", "Looker Studio", "Power BI"],
+      "TOOLS": ["Vercel", "Figma", "Supabase", "Git", "Microsoft Azure"]
+    }
+  },
+  "contact": {
+    "title": "AVAILABLE FOR NEW PROJECTS",
+    "githubLabel": "View my GitHub profile",
+    "linkedinLabel": "View my LinkedIn profile"
   }
 }

@@ -1,5 +1,139 @@
 {
+  "nav": {
+    "home": { "title": "Inicio", "label": "Ir a inicio" },
+    "experience": { "title": "Experiencia", "label": "Ir a experiencia" },
+    "projects": { "title": "Proyectos", "label": "Ir a proyectos" },
+    "about-me": { "title": "Sobre mí", "label": "Ir a sobre mí" },
+    "contact": { "title": "Contacto", "label": "Ir a contacto" }
+  },
+  "header": {
+    "themeToLight": "Cambiar a modo claro",
+    "themeToDark": "Cambiar a modo oscuro",
+    "themeLight": "Modo claro",
+    "themeDark": "Modo oscuro",
+    "language": "Cambiar idioma",
+    "languageTitle": "Cambiar a inglés"
+  },
   "hero": {
-    "badge": "Disponible para trabajar"
+    "badge": "Disponible para trabajar",
+    "role": "Desarrollador Web",
+    "description": "Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios — mejorados con experiencia real en datos e IA",
+    "cv": "Descargar CV",
+    "cvLabel": "Abrir mi hoja de vida en una nueva pestaña",
+    "scrollDown": "Ir a la siguiente sección",
+    "terminal": {
+      "email": "Correo",
+      "location": "Ubicación",
+      "locationValue": "Bogotá D.C. - Colombia",
+      "studying": "Estudiando",
+      "studyingValue": "Ingeniería de Software",
+      "experience": "Experiencia",
+      "experienceValue": "Data e Inteligencia Artificial (RAG, LLM)"
+    }
+  },
+  "experience": {
+    "title": "EXPERIENCIA",
+    "items": [
+      {
+        "start": "ACTUAL",
+        "end": "",
+        "role": "Desarrollador Fullstack Junior",
+        "company": "Freelance",
+        "description": [
+          "Diseño de productos web: Estructura, interfaz y decisiones visuales guiadas por el objetivo del producto, priorizando claridad y facilidad de uso.",
+          "Desarrollo Frontend: Interfaces responsive, accesibles y mantenibles con React, TypeScript y Tailwind, construidas para producción.",
+          "Desarrollo Backend: APIs REST con FastAPI, modelado y gestión de bases de datos (PostgreSQL, Supabase, MongoDB) y autenticación de usuarios.",
+          "Entrega y lanzamiento: Preparación técnica, despliegue (Vercel, Render/Railway) y acompañamiento hasta que el producto esté en producción.",
+          "Análisis de datos: Limpieza, procesamiento y automatización de datos (Python, ETL), con dashboards e informes que apoyan la toma de decisiones.",
+          "Integraciones con IA: Agentes y asistentes basados en RAG (ChromaDB, Qdrant, LlamaIndex, LLMs), conectados a tus herramientas de trabajo."
+        ]
+      },
+      {
+        "start": "Mar 2026",
+        "end": "Sep 2026",
+        "role": "Analista de Datos",
+        "company": "Open English (Prácticas)",
+        "description": [
+          "Desarrollé un agente de IA basado en arquitectura RAG (LlamaIndex, ChromaDB/Qdrant, Groq LLM) para la capacitación y el onboarding de nuevos integrantes del equipo, con backend en FastAPI e integración a Slack para consultas directas desde el canal de trabajo.",
+          "Diseñé y mantuve pipelines ETL en Python que extraen datos desde FTP, APIs y Google Sheets, los transforman y consolidan de forma automática, eliminando la carga manual de datos.",
+          "Construí dashboards dinámicos en Looker Studio para visualizar KPIs y métricas operativas, incluyendo analítica de campañas y embudos de marketing, para apoyar la toma de decisiones.",
+          "Implementé web scraping con Playwright para automatizar la extracción de información de distintas fuentes web y alimentar los procesos de análisis y reportería.",
+          "Analicé datos de campañas de WhatsApp (tendencias en la tasa de fallos y en el volumen de leads) con Python (pandas, numpy), Excel y Google Sheets."
+        ]
+      },
+      {
+        "start": "Oct 2025",
+        "end": "Dic 2025",
+        "role": "Formulador de Proyectos y Analista de Datos",
+        "company": "Proyecto EXPERTA (Unión Temporal Fessanjose y Triángulo)",
+        "description": [
+          "Automaticé flujos de trabajo con Python, reduciendo tareas manuales repetitivas.",
+          "Limpié y depuré las bases de datos de caracterización mediante procesos ETL, eliminando duplicados y registros fallidos para dejar solo candidatos válidos para el análisis y el seguimiento.",
+          "Diseñé dashboards en Power BI y, junto con el equipo, presenté los resultados para evaluar el comportamiento de las campañas y ajustar decisiones.",
+          "Realicé gestión de investigación para la planeación y ejecución del proyecto, e implementé el monitoreo de indicadores y estrategias de mitigación.",
+          "Analicé los datos en Python, Excel y Google Sheets para identificar avances, brechas y necesidades de la población atendida."
+        ]
+      },
+      {
+        "start": "Mar 2025",
+        "end": "Sep 2025",
+        "role": "Formulador de Proyectos",
+        "company": "Promise Gestión y Soluciones S.A.S",
+        "description": [
+          "Ingresé y gestioné datos en sistemas como BIZAGI y SUIFP SGR.",
+          "Contribuí en la elaboración de la estructura y componentes de los proyectos: objetivos, actividades, presupuesto, cronograma y recursos necesarios.",
+          "Parametricé y estructuré proyectos de inversión pública en MGA-Web alineados con la Metodología General Ajustada del DNP.",
+          "Formulé, estructuré y di seguimiento a proyectos de inversión con diversas fuentes de financiamiento."
+        ]
+      }
+    ],
+    "timeline": [
+      "Fullstack Jr · Freelance",
+      "Analista de Datos · Open English",
+      "Analista de Datos · EXPERTA",
+      "Formulador · Promise"
+    ]
+  },
+  "projects": {
+    "title": "PROYECTOS",
+    "visit": "Visitar",
+    "stack": "Stack",
+    "repositoryLabel": "Ver el repositorio del proyecto",
+    "linkLabel": "Ver el proyecto",
+    "buildSteps": ["planeación", "diseño", "desarrollo", "testing", "despliegue", "optimización"],
+    "items": {
+      "bigsort": {
+        "title": "BIG SORT",
+        "description": "Herramienta para visualizar cómo funcionan los algoritmos de ordenamiento en tiempo real, con animaciones paso a paso."
+      },
+      "rekrypt": {
+        "title": "REKRYPT",
+        "description": "Aplicación web que transforma texto encadenando múltiples métodos de hashing y codificación, donde la salida de cada uno es la entrada del siguiente."
+      },
+      "solarsystem": {
+        "title": "SISTEMA SOLAR",
+        "description": "Simulación interactiva del sistema solar con planetas que orbitan alrededor del Sol en trayectorias elípticas y giran sobre sus propios ejes."
+      }
+    }
+  },
+  "about": {
+    "title": "SOBRE MÍ",
+    "yearsExperience": "Año de experiencia",
+    "englishLevel": "Nivel de inglés",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "skills": {
+      "FRONTEND": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "Radix UI"],
+      "BACKEND": ["Python", "FastAPI", "Pydantic", "SQL", "PostgreSQL", "MongoDB"],
+      "AUTOMATIZACION": ["Pandas", "NumPy", "ETL/ELT", "Playwright", "Apps Script"],
+      "INTELIGENCIA_ARTIFICIAL": ["Arquitectura RAG", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "Integración de LLMs", "MCP"],
+      "ANALISIS_DATOS": ["Jupyter Notebook", "Excel", "Google Sheets", "Looker Studio", "Power BI"],
+      "HERRAMIENTAS": ["Vercel", "Figma", "Supabase", "Git", "Microsoft Azure"]
+    }
+  },
+  "contact": {
+    "title": "DISPONIBLE PARA NUEVOS PROYECTOS",
+    "githubLabel": "Ver mi perfil de GitHub",
+    "linkedinLabel": "Ver mi perfil de LinkedIn"
   }
 }
