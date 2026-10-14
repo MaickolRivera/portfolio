@@ -128,13 +128,13 @@
     "englishLevel": "English level",
     "projects": "Projects",
     "certifications": "Certifications",
-    "skills": {
-      "FRONTEND": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "Radix UI"],
-      "BACKEND": ["Python", "FastAPI", "Pydantic", "SQL", "PostgreSQL", "MongoDB"],
-      "AUTOMATION": ["Pandas", "NumPy", "ETL/ELT", "Playwright", "Apps Script"],
-      "ARTIFICIAL_INTELLIGENCE": ["RAG Architecture", "LlamaIndex", "ChromaDB/Qdrant", "Embeddings", "LLM Integration", "MCP"],
-      "DATA_ANALYSIS": ["Jupyter Notebook", "Excel", "Google Sheets", "Looker Studio", "Power BI"],
-      "TOOLS": ["Vercel", "Figma", "Supabase", "Git", "Microsoft Azure"]
+    "skillGroups": {
+      "frontend": "FRONTEND",
+      "backend": "BACKEND",
+      "automation": "AUTOMATION",
+      "ai": "ARTIFICIAL_INTELLIGENCE",
+      "dataAnalysis": "DATA_ANALYSIS",
+      "tools": "TOOLS"
     }
   },
   "contact": {

@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { UserIcon } from "../assets/icons/NavIcons";
 import StarBackground from "../components/StarBackground";
 import AboutGrid from "./sub_sections/AboutGrid";
 
 export default function About(){
+
+    const { t } = useTranslation();
+
     return(
         <section 
         id="about-me"
@@ -13,7 +17,7 @@ export default function About(){
             <div className="flex flex-row items-center gap-4">
                 <UserIcon size={25} className="text-subtext/80"/>
                 <h2 className="text-2xl mt-1 text-center text-gradient font-semibold">
-                    SOBRE MI
+                    {t("about.title")}
                 </h2>
             </div>
 
