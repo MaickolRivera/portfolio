@@ -18,8 +18,8 @@ export default function Contact(){
                 {t("contact.title")}
             </h2>
             <div className="flex gap-6">
-                <SocialButton text={"GITHUB"} href="https://github.com/maickolrivera" target="_black" Options="github" label={t("contact.githubLabel")}></SocialButton>
-                <SocialButton text={"LINKEDIN"} href="https://www.linkedin.com/in/maickol-rivera/" target="_black" Options="link" label={t("contact.githubLabel")}></SocialButton>
+                <SocialButton text={"GITHUB"} href="https://github.com/maickolrivera" target="_blank" Options="github" label={t("contact.githubLabel")}></SocialButton>
+                <SocialButton text={"LINKEDIN"} href="https://www.linkedin.com/in/maickol-rivera/" target="_blank" Options="link" label={t("contact.linkedinLabel")}></SocialButton>
             </div>
         </section>
     )

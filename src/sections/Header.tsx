@@ -1,18 +1,9 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState } from "react";
 import { navItems } from "./sub_sections/NavItems";
-import { HomeIcon, BriefcaseIcon, UserIcon, MailIcon } from "../assets/icons/NavIcons";
 import type { ThemeKey } from "../types";
-import { Moon, Sun, ProjectsIcon } from "../assets/icons/UIIcons";
+import { Moon, Sun } from "../assets/icons/UIIcons";
 import { useTranslation } from "react-i18next";
 
-
-const navIcons: Record<string, ReactNode> = {
-    "home": <HomeIcon size={15} />,
-    "experience": <BriefcaseIcon size={15} />,
-    "projects": <ProjectsIcon size={15} />,
-    "about-me": <UserIcon size={15} />,
-    "contact": <MailIcon size={15} />,
-};
 
 export default function Header(){
 
@@ -98,7 +89,7 @@ export default function Header(){
                                         aria-label={t(`nav.${item.id}.label`)}
                                         title={t(`nav.${item.id}.title`)}
                                     >
-                                        {navIcons[item.id]}
+                                        {item.icon}
                                         {!isHome && (
                                             <span className="hidden md:inline pt-0.5 pr-1">
                                                 {t(`nav.${item.id}.title`)}

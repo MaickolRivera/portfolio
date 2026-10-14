@@ -1,13 +1,13 @@
-import { Arrow, Github, Link, Document } from "../assets/icons/UIIcons";
+import { Github, Link, Document } from "../assets/icons/UIIcons";
 
-type Options = "github" | "link" | "arrow" | "document"
+type Options = "github" | "link" | "document"
 
 type SocialButtonProps = {
   text: string;
   href?: string;
   target?: string;
-  Options?: Options;
-  label?: string;
+  Options: Options;
+  label: string;
   className?: string;
 };
 
@@ -15,8 +15,8 @@ export default function SocialButton({
   text = "",
   href = "#",
   target = "",
-  Options = "arrow",
-  label = "[read more...]",
+  Options,
+  label,
   className = ""
 }: SocialButtonProps) {
   return (
@@ -37,9 +37,7 @@ export default function SocialButton({
     >
       
         {
-          Options === "arrow" ? (
-            <Arrow  />
-          ) : Options === "github" ? (
+          Options === "github" ? (
             <Github  />
           ) : Options === "link" ? (
             <Link  />

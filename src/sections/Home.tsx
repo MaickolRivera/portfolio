@@ -66,7 +66,7 @@ export default function Home(){
                         </p>
                     </div>
 
-                    <SocialButton Options="document" text={t("hero.cv")} label={t("hero.cvLabel")} target="_blank" href="https://maickolrivera.vercel.app/CV_MAICKOL_RIVERA.pdf"/>
+                    <SocialButton Options="document" text={t("hero.cv")} label={t("hero.cvLabel")} target="_blank" href="https://www.maickolrivera.me/CV_MAICKOL_RIVERA.pdf"/>
                 </div>
 
                 <Terminal
@@ -82,7 +82,8 @@ export default function Home(){
 
             <button 
             className="arrow absolute bottom-50 md:bottom-12 z-10 cursor-pointer"
-            onClick={() => scrollToSection(navItems[1].id)}>
+            onClick={() => scrollToSection(navItems[1].id)}
+            aria-label={t("hero.scrollDown")}>
                 <Arrow size="20" className="opacity-50"/>
             </button>
 

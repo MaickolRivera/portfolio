@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maickolrivera.vercel.app/sitemap.xml
+Sitemap: https://www.maickolrivera.me/sitemap.xml

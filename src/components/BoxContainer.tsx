@@ -4,20 +4,6 @@ type BoxContainerProps = {
   className?: string;
 };
 
-export function BoxContainer({ children, title, className }: BoxContainerProps) {
-  return (
-    <div className={`${className}
-      flex flex-col items-center gap-8 py-8 h-auto
-      overflow-hidden border-1 rounded-xl
-      
-      border-line bg-surface
-    `}>
-      <p className="text-2xl/7 text-center text-gradient font-semibold">{title}</p>
-      {children} 
-    </div>
-  );
-}
-
 export function SmallBox({ children, title, className }: BoxContainerProps) {
   return (
     <div className={`${className}
