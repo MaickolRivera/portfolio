@@ -1,9 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "maickolrivera.vercel.app" }],
-      "destination": "https://www.maickolrivera.me/:path*",
+      "destination": "https://www.maickolrivera.me/$1",
       "permanent": true
     }
   ]
