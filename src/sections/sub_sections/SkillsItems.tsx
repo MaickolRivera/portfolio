@@ -1,6 +1,6 @@
 import {
     ReactIcon, TypeScriptIcon, JavaScriptIcon, TailwindIcon, RadixIcon,
-    AstroIcon, ThreeJSIcon, PythonIcon, FastAPIIcon,
+    AstroIcon, ThreeJSIcon, PythonIcon, FastAPIIcon, OnnxIcon,
 } from "../../assets/icons/SkillIcons";
 
 // Icons for the skills used in projects (ProjectsItems `stack`), looked up by name
@@ -12,7 +12,7 @@ export const SKILL_ICONS: Record<string, React.ReactNode> = {
     "RADIX UI": <RadixIcon />,
     "ASTRO": <AstroIcon />,
     "THREE JS": <ThreeJSIcon />,
-    "REACT THREE FIBER": <ThreeJSIcon />,
     "PYTHON": <PythonIcon />,
     "FASTAPI": <FastAPIIcon />,
+    "ONNX": <OnnxIcon />,
 }

@@ -2,6 +2,13 @@ import type { Project } from "../../types";
 
 export const projectsItems: Project[] = [
   {
+    slug: "prisma",
+    img: "/prisma.webp",
+    repository: "https://github.com/MaickolRivera/aiprisma",
+    link: "https://aiprisma.vercel.app/",
+    stack: ["REACT", "TYPESCRIPT", "THREE JS", "TAILWIND", "PYTHON", "FASTAPI", "ONNX"]
+  },
+  {
     slug: "bigsort",
     img: "/bigsort.webp",
     repository: "https://github.com/maickolrivera/bigsort",
@@ -13,7 +20,7 @@ export const projectsItems: Project[] = [
     img: "/rekrypt.webp",
     repository: "https://github.com/maickolrivera/rekrypt",
     link: "https://rekrypt.vercel.app/",
-    stack: ["REACT", "TYPESCRIPT", "REACT THREE FIBER", "TAILWIND", "PYTHON", "FASTAPI"]
+    stack: ["REACT", "TYPESCRIPT", "THREE JS", "TAILWIND", "PYTHON", "FASTAPI"]
   },
   {
     slug: "solarsystem",

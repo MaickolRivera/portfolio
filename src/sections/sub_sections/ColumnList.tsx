@@ -40,7 +40,7 @@ import type { Project } from "../../types";
             decoding="async"
             alt={title}
             className="
-            right-0 top-0 w-full rounded-lg
+            right-0 top-0 w-full rounded-xl
             md:absolute md:-right-50 md:top-10 md:w-145"
           />
 

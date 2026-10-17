@@ -8,7 +8,7 @@ export function SmallBox({ children, title, className }: BoxContainerProps) {
   return (
     <div className={`${className}
       flex flex-col justify-center items-center gap-0.5 py-6 h-auto md:h-full
-      overflow-hidden border-1 rounded-xl font-semibold
+      overflow-hidden border rounded-xl font-semibold
       
       border-line bg-surface
     `}>

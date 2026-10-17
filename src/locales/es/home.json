@@ -17,7 +17,7 @@
   "hero": {
     "badge": "Disponible para trabajar",
     "role": "Desarrollador Web",
-    "description": "Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios — mejorados con experiencia real en datos e IA",
+    "description": "Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios, mejorados con experiencia real en datos e IA",
     "cv": "Descargar CV",
     "cvLabel": "Abrir mi hoja de vida en una nueva pestaña",
     "scrollDown": "Ir a la siguiente sección",
@@ -108,6 +108,10 @@
       "optimización"
     ],
     "items": {
+      "prisma": {
+        "title": "PRISMA",
+        "description": "Análisis de noticias impulsado por IA: Prisma desglosa una noticia en diferentes niveles para mostrarte cómo te la están contando."
+      },
       "bigsort": {
         "title": "BIG SORT",
         "description": "Herramienta para visualizar cómo funcionan los algoritmos de ordenamiento en tiempo real, con animaciones paso a paso."
