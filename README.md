@@ -2,7 +2,7 @@
 
 # Maickol Rivera
 
-**Data Analyst & Junior Full Stack Developer** based in Bogotá, Colombia. <br>
+**Data Analyst & Junior Software Developer** based in Bogotá, Colombia. <br>
 Software Engineering student focused on process automation, data solutions, AI integrations, and web products built for production.
 
 [**Portfolio**](https://www.maickolrivera.me) · [**Download CV**](https://www.maickolrivera.me/CV_MAICKOL_RIVERA.pdf)
@@ -23,7 +23,7 @@ Software Engineering student focused on process automation, data solutions, AI i
 ## Experience
 
 <sub>Current</sub><br>
-<b>Junior Full Stack Developer [Freelance]</b><br>
+<b>Junior Software Developer [Freelance]</b><br>
 Design, development, and deployment of web products, from requirements to production.
 
 <sub>Mar 2026 – Sep 2026</sub><br>

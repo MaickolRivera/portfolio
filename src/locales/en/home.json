@@ -17,7 +17,7 @@
   "hero": {
     "badge": "Available to work",
     "role": "Software Developer",
-    "description": "I build high-performance web applications with modern frameworks and clean backend systems, enhanced by real-world experience in data and AI",
+    "description": "Specialized in Fullstack web development, data pipelines, and Artificial Intelligence integrations. I build functional, accessible, and automated products.",
     "cv": "Download CV",
     "cvLabel": "Open my resume in a new tab",
     "scrollDown": "Go to the next section",
@@ -36,7 +36,7 @@
       {
         "start": "PRESENT",
         "end": "",
-        "role": "Junior Fullstack Developer",
+        "role": "Junior Software Developer",
         "company": "Freelance",
         "description": [
           "Web product design: Structure, interface and visual decisions driven by the product's goal, prioritizing clarity and ease of use.",
@@ -87,7 +87,7 @@
       }
     ],
     "timeline": {
-      "freelance": "Fullstack Jr [Freelance]",
+      "freelance": "Software Developer Jr [Freelance]",
       "openEnglish": "Data Analyst [Open English]",
       "experta": "Data Analyst [EXPERTA]",
       "promise": "Project Planner [Promise Gestión]"
@@ -139,7 +139,6 @@
     "skillGroups": {
       "frontend": "FRONTEND",
       "backend": "BACKEND",
-      "automation": "AUTOMATION",
       "ai": "ARTIFICIAL_INTELLIGENCE",
       "dataAnalysis": "DATA_ANALYSIS",
       "tools": "TOOLS"
