@@ -1,8 +1,16 @@
 export const Skills: Record<string, string[]> = {
-  frontend: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "Three.js", "Tailwind", "Radix UI"],
-  backend: ["Python", "FastAPI", "Pydantic", "pytest", "SQL", "PostgreSQL", "MongoDB", "Postman", "JWT"],
-  ai: ["RAG", "MCP", "LlamaIndex", "Embeddings", "ChromaDB/Qdrant", "NLP", "scikit", "ONNX Runtime", "Laya"],
-  automation: ["n8n", "Apps Script", "Pandas", "NumPy", "Playwright", "ETL/ELT"],
-  dataAnalysis: ["Jupyter Notebook", "Excel", "Google Sheets", "Looker Studio", "Power BI"],
-  tools: ["Vercel", "Figma", "Supabase", "Git", "Microsoft Azure"],
+  frontend: [
+  "TypeScript", "JavaScript", "React", "Next.js", "Tailwind", "shadcn/ui", "Vite", "Astro", "Three.js", "HTML", "CSS"
+  ],
+  backend: [
+    "Python", "FastAPI", "Supabase", "PostgreSQL", "MongoDB", "SQL", "RLS", "JWT", "REST APIs", "Postman"
+  ],
+  
+  dataAnalysis: [
+    "SQL", "Power BI", "Looker Studio", "Excel", "Google Sheets", "Apps Script", "Pandas", "NumPy", "ETL/ELT"
+  ],
+  ai: [
+    "RAG", "LlamaIndex", "ChromaDB", "Qdrant", "Embeddings", "LLMs", "MCP", "NLP", "scikit-learn", "ONNX Runtime", "Laya"
+  ],
+  tools: ["Git", "GitHub Actions", "Vercel", "Figma", "ESLint"],
 };

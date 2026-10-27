@@ -26,7 +26,7 @@ export function MainBox({ className }: BoxContainerProps) {
       border-line bg-surface
     `}>
       <div className="overflow-hidden w-22 rounded-lg">
-        <img className="h-full w-full object-cover scale-125 translate-y-2.5" src="/Maickol.webp" width={320} height={320} loading="lazy" decoding="async" alt="Maickol Rivera" />
+        <img className="h-full w-full object-cover scale-110 translate-y-1" src="/Maickol.webp" width={320} height={320} loading="lazy" decoding="async" alt="Maickol Rivera" />
       </div>
 
       <div className="flex flex-col gap-1">

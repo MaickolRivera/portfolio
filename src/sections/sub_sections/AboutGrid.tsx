@@ -43,7 +43,7 @@ export default function AboutGrid(){
 
             <SmallBox 
             className="md:col-start-1 md:row-start-2"
-            title="+5">
+            title="+8">
                 <p className="font-normal text-muted">
                     {t("about.projects")}
                 </p>
@@ -51,7 +51,7 @@ export default function AboutGrid(){
 
             <SmallBox 
             className="md:col-start-4 md:row-start-2"
-            title="+7">
+            title="+10">
                 <p className="w-36 text-center text-base/4.5 font-normal text-muted">    
                     {t("about.certifications")}
                 </p>
