@@ -71,7 +71,23 @@ export function RadixIcon({ size = 16, className = "" }: IconProps) {
   );
 }
 
+export function NextIcon({ size = 16, className = "" }: IconProps) {
+  return (
+    <svg {...base(size, className)}>
+      <path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z" />
+    </svg>
+  );
+}
+
 // Backend
+
+export function SupabaseIcon({ size = 16, className = "" }: IconProps) {
+  return (
+    <svg {...base(size, className)}>
+      <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" />
+    </svg>
+  );
+}
 
 export function PythonIcon({ size = 16, className = "" }: IconProps) {
   return (

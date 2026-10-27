@@ -16,7 +16,7 @@
   },
   "hero": {
     "badge": "Disponible para trabajar",
-    "role": "Desarrollador Web",
+    "role": "Desarrollador de Software",
     "description": "Desarrollo aplicaciones web de alto rendimiento con frameworks modernos y sistemas backend limpios, mejorados con experiencia real en datos e IA",
     "cv": "Descargar CV",
     "cvLabel": "Abrir mi hoja de vida en una nueva pestaña",
@@ -108,6 +108,10 @@
       "optimización"
     ],
     "items": {
+      "docsdotmd": {
+        "title": "DOCSDOTMD",
+        "description": "Plataforma de documentación privada con editor Markdown y componentes interactivos. Espacios y páginas con acceso por roles aplicado con RLS"
+      },
       "prisma": {
         "title": "PRISMA",
         "description": "Análisis de noticias impulsado por IA: Prisma desglosa una noticia en diferentes niveles para mostrarte cómo te la están contando."

@@ -16,7 +16,7 @@
   },
   "hero": {
     "badge": "Available to work",
-    "role": "Web Developer",
+    "role": "Software Developer",
     "description": "I build high-performance web applications with modern frameworks and clean backend systems, enhanced by real-world experience in data and AI",
     "cv": "Download CV",
     "cvLabel": "Open my resume in a new tab",
@@ -108,12 +108,16 @@
       "optimization"
     ],
     "items": {
+      "docsdotmd": {
+        "title": "DOCSDOTMD",
+        "description": "A private documentation platform with a Markdown editor and interactive components. Spaces and pages with role-based access enforced by RLS"
+      },
       "prisma": {
         "title": "PRISMA",
         "description": "AI-powered news analysis: Prisma breaks down a news story into layers to show how it's being told to you."
       },
       "bigsort": {
-        "title": "BIG SORT",
+        "title": "BIGSORT",
         "description": "A tool to visualize how sorting algorithms work in real time, with step-by-step animations."
       },
       "rekrypt": {

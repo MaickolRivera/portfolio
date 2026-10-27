@@ -2,6 +2,13 @@ import type { Project } from "../../types";
 
 export const projectsItems: Project[] = [
   {
+    slug: "docsdotmd",
+    img: "/docsdotmd.webp",
+    repository: "https://github.com/MaickolRivera/docsdotmd",
+    link: "https://docsdotmd.vercel.app/",
+    stack: ["NEXT.JS", "TYPESCRIPT", "TAILWIND", "SUPABASE", "GITHUB ACTIONS"]
+  },
+  {
     slug: "prisma",
     img: "/prisma.webp",
     repository: "https://github.com/MaickolRivera/aiprisma",
