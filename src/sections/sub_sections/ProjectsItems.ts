@@ -9,6 +9,13 @@ export const projectsItems: Project[] = [
     stack: ["NEXT.JS", "TYPESCRIPT", "TAILWIND", "SUPABASE", "GITHUB ACTIONS"]
   },
   {
+    slug: "zlin",
+    img: "/zlin.webp",
+    repository: "https://github.com/MaickolRivera/zlin",
+    link: "https://zlin.vercel.app/",
+    stack: ["REACT", "TYPESCRIPT", "TAILWIND", ".NET", "C#", "POSTGRESQL", "JWT", "DOCKER"]
+  },
+  {
     slug: "prisma",
     img: "/prisma.webp",
     repository: "https://github.com/MaickolRivera/aiprisma",
@@ -28,12 +35,5 @@ export const projectsItems: Project[] = [
     repository: "https://github.com/maickolrivera/rekrypt",
     link: "https://rekrypt.vercel.app/",
     stack: ["REACT", "TYPESCRIPT", "THREE JS", "TAILWIND", "PYTHON", "FASTAPI"]
-  },
-  {
-    slug: "solarsystem",
-    img: "/solarsystem.webp",
-    repository: "https://github.com/maickolrivera/sistema-solar",
-    link: "https://sistemasolar-threejs.vercel.app/",
-    stack: ["ASTRO", "THREE JS", "JAVASCRIPT"]
   },
 ];

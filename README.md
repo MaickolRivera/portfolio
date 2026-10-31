@@ -44,10 +44,11 @@ Structured and followed up public investment projects in MGA-Web, aligned with t
 
 | Project | Description | Links |
 |---|---|---|
+| **DOCSdotmd** | Private documentation platform with a Markdown editor and interactive components, with role-based access enforced by RLS. | [Live](https://docsdotmd.vercel.app/) · [Repo](https://github.com/MaickolRivera/docsdotmd) |
+| **Zlin** | Fast URL shortener with QR codes, link expiration and click tracking. | [Live](https://zlin.vercel.app/) · [Repo](https://github.com/MaickolRivera/zlin) |
 | **Prisma** | AI-powered news analysis that breaks a story down into layers to show how it's being told, not just what's being told. | [Live](https://aiprisma.vercel.app/) · [Repo](https://github.com/MaickolRivera/aiprisma) |
 | **BigSort** | Visualize how sorting algorithms work, with step-by-step animations, live stats, and Big O notation. | [Live](https://bigsort.vercel.app/) · [Repo](https://github.com/maickolrivera/bigsort) |
 | **Rekrypt** | Transform text by chaining 20+ hashing and encoding methods, with shareable chains. | [Live](https://rekrypt.vercel.app/) · [Repo](https://github.com/maickolrivera/rekrypt) |
-| **Sistema Solar** | Interactive solar system simulation with elliptical orbits and planet rotation. | [Live](https://sistemasolar-threejs.vercel.app/) · [Repo](https://github.com/maickolrivera/sistema-solar) |
 
 ---
 

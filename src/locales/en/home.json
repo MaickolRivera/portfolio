@@ -112,6 +112,10 @@
         "title": "DOCSDOTMD",
         "description": "A private documentation platform with a Markdown editor and interactive components. Spaces and pages with role-based access enforced by RLS"
       },
+      "zlin": {
+        "title": "ZLIN",
+        "description": "A fast URL shortener with QR codes, link expiration and click tracking. React frontend and an ASP.NET Core API with JWT authentication and PostgreSQL."
+      },
       "prisma": {
         "title": "PRISMA",
         "description": "AI-powered news analysis: Prisma breaks down a news story into layers to show how it's being told to you."
@@ -123,10 +127,6 @@
       "rekrypt": {
         "title": "REKRYPT",
         "description": "A web app that transforms text by chaining multiple hashing and encoding methods, where each one's output becomes the next one's input."
-      },
-      "solarsystem": {
-        "title": "SOLAR SYSTEM",
-        "description": "An interactive solar system simulation with planets orbiting the Sun along elliptical paths and spinning on their own axes."
       }
     }
   },

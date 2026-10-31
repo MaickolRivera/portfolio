@@ -1,7 +1,7 @@
 import {
-    ReactIcon, TypeScriptIcon, JavaScriptIcon, TailwindIcon, RadixIcon,
-    AstroIcon, ThreeJSIcon, NextIcon, PythonIcon, FastAPIIcon, SupabaseIcon,
-    OnnxIcon,
+    ReactIcon, TypeScriptIcon, TailwindIcon, RadixIcon,
+    ThreeJSIcon, NextIcon, PythonIcon, FastAPIIcon, SupabaseIcon,
+    OnnxIcon, DotNetIcon, PostgreSQLIcon, DockerIcon, JWTIcon, CSharpIcon,
 } from "../../assets/icons/SkillIcons";
 import { Github } from "../../assets/icons/UIIcons";
 
@@ -9,10 +9,8 @@ import { Github } from "../../assets/icons/UIIcons";
 export const SKILL_ICONS: Record<string, React.ReactNode> = {
     "REACT": <ReactIcon />,
     "TYPESCRIPT": <TypeScriptIcon />,
-    "JAVASCRIPT": <JavaScriptIcon />,
     "TAILWIND": <TailwindIcon />,
     "RADIX UI": <RadixIcon />,
-    "ASTRO": <AstroIcon />,
     "THREE JS": <ThreeJSIcon />,
     "PYTHON": <PythonIcon />,
     "FASTAPI": <FastAPIIcon />,
@@ -20,4 +18,9 @@ export const SKILL_ICONS: Record<string, React.ReactNode> = {
     "NEXT.JS": <NextIcon />,
     "SUPABASE": <SupabaseIcon />,
     "GITHUB ACTIONS": <Github className="" />,
+    ".NET": <DotNetIcon />,
+    "C#": <CSharpIcon />,
+    "POSTGRESQL": <PostgreSQLIcon />,
+    "DOCKER": <DockerIcon />,
+    "JWT": <JWTIcon />,
 }
