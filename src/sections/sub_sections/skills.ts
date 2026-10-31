@@ -3,7 +3,7 @@ export const Skills: Record<string, string[]> = {
   "TypeScript", "JavaScript", "React", "Next.js", "Tailwind", "shadcn/ui", "Vite", "Astro", "Three.js", "HTML", "CSS"
   ],
   backend: [
-    "Python", "FastAPI", "Supabase", "PostgreSQL", "MongoDB", "SQL", "RLS", "JWT", "REST APIs", "Postman"
+    "C#", ".NET", "ASP.NET Core", "Entity Framework Core", "Python", "FastAPI", "Supabase", "PostgreSQL", "MongoDB", "SQL Server", "RLS", "JWT", "REST APIs", "Postman"
   ],
   
   dataAnalysis: [
@@ -12,5 +12,5 @@ export const Skills: Record<string, string[]> = {
   ai: [
     "RAG", "LlamaIndex", "ChromaDB", "Qdrant", "Embeddings", "LLMs", "MCP", "NLP", "scikit-learn", "ONNX Runtime", "Laya"
   ],
-  tools: ["Git", "GitHub Actions", "Vercel", "Figma", "ESLint"],
+  tools: ["Git", "Docker", "GitHub Actions", "Vercel", "Render", "Neon", "Figma", "ESLint"],
 };
