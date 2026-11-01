@@ -5,7 +5,7 @@
 **Data Analyst & Junior Software Developer** based in Bogotá, Colombia. <br>
 Software Engineering student focused on process automation, data solutions, AI integrations, and web products built for production.
 
-[**Portfolio**](https://www.maickolrivera.me) · [**Download CV**](https://www.maickolrivera.me/CV_MAICKOL_RIVERA.pdf)
+[**Portfolio**](https://www.maickolrivera.me) · [**Download CV**](https://www.maickolrivera.me/CV_Maickol_Rivera.pdf)
 
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)

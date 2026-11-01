@@ -5,6 +5,11 @@
       "has": [{ "type": "host", "value": "maickolrivera.vercel.app" }],
       "destination": "https://www.maickolrivera.me/$1",
       "permanent": true
+    },
+    {
+      "source": "/CV_MAICKOL_RIVERA.pdf",
+      "destination": "/CV_Maickol_Rivera.pdf",
+      "permanent": true
     }
   ]
 }

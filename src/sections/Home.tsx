@@ -66,7 +66,7 @@ export default function Home(){
                         </p>
                     </div>
 
-                    <SocialButton Options="document" text={t("hero.cv")} label={t("hero.cvLabel")} target="_blank" href="https://www.maickolrivera.me/CV_MAICKOL_RIVERA.pdf"/>
+                    <SocialButton Options="document" text={t("hero.cv")} label={t("hero.cvLabel")} target="_blank" href="https://www.maickolrivera.me/CV_Maickol_Rivera.pdf"/>
                 </div>
 
                 <Terminal
